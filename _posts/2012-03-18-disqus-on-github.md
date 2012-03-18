@@ -13,5 +13,5 @@ var disqus_url = 'http://gflarity.github.com{{ page.url }}';
 
 Now it all works like a charm. 
 
-Thanks to [http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/][].
+Thanks to [http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/](http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/).
 
