@@ -6,31 +6,11 @@ title: Projects
 <h1 class="page-title">Open Source Projects</h1>
 
 <div id="github-projects">
-  <div class="full">
-    <h1 class="repo-title"><a href="https://github.com/flyerhzm/bullet">bullet</a></h1>
-    <div class="repo-content full-content">A rails plugin/gem to kill N+1 queries and unused eager loading</div>
-    <div class="clear"></div>
-  </div>
-  <div class="rule"><hr></div>
-
-  <div class="full">
-    <h1 class="repo-title"><a href="https://github.com/flyerhzm/rails_best_practices">rails_best_practices</a></h1>
-    <div class="repo-content full-content">a code metric tool for rails projects</div>
-    <div class="clear"></div>
-  </div>
-  <div class="rule"><hr></div>
-
-  <div class="full">
-    <h1 class="repo-title"><a href="https://github.com/flyerhzm/css_sprite">css_sprite</a></h1>
-    <div class="repo-content full-content">automatically css sprite</div>
-    <div class="clear"></div>
-  </div>
-  <div class="rule"><hr></div>
 </div>
 
 <script type="text/javascript" charset="utf-8">
   $('#github-projects').html('');
-  $.githubUser(['flyerhzm', 'railsbp'], function(data) {
+  $.githubUser(['gflarity'], function(data) {
     var repos = data.user.repositories;
     repos.sort(function(a,b) {
       return b.watchers - a.watchers;
