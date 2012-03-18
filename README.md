@@ -1,7 +1,10 @@
 flyerhzm.github.com
 ===================
 
-my blog <http://huangzhimin.com>
+My Blog <http://gflarity.github.com>
+
+
+Shamelessly forked from <http://huangzhimin.com>
 
 Usage
 -----
