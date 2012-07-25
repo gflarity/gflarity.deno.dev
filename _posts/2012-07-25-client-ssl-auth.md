@@ -1,3 +1,10 @@
+---
+layout: post
+title: Client SSL Auth
+categories:
+- blog
+---
+
 The HTTPS system allows you to communicate securely with a server and trust it's idenity. This is how it's generally used. However it's also possible for the server to trust the identity of the client as well. 
 
 It's fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.
