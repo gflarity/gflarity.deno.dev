@@ -2,7 +2,6 @@ The HTTPS system allows you to communicate securely with a server and trust it's
 
 It's fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.
 
-
 # Keys and Certs
 
 First, you're going to need all your certs and keys. Follow along with the instructions below to do so. It's adapted from [this](http://blog.nategood.com/client-side-certificate-authentication-in-ngi) article. 
@@ -34,7 +33,9 @@ openssl rsa -in client.key -out client.key.pem
 # Sign the client certificate with our CA cert.  Unlike signing our own server cert, this is what we want to do.
 openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt`
 </code></pre>
-<p>
+
+<p></p>
+
 # Server:
 
 <pre><code>
@@ -56,7 +57,8 @@ https.createServer(options, function (req, res) {
     res.end("hello world\n");
 }).listen(4443);
 </code></pre>
-<p>
+
+<p></p>
 # Client:
 
 <pre><code>
