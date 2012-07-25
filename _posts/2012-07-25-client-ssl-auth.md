@@ -34,7 +34,7 @@ openssl rsa -in client.key -out client.key.pem
 # Sign the client certificate with our CA cert.  Unlike signing our own server cert, this is what we want to do.
 openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt`
 </code></pre>
-
+<p>
 # Server:
 
 <pre><code>
@@ -56,7 +56,7 @@ https.createServer(options, function (req, res) {
     res.end("hello world\n");
 }).listen(4443);
 </code></pre>
-
+<p>
 # Client:
 
 <pre><code>
