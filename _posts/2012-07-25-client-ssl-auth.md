@@ -7,8 +7,8 @@ First, you're going to need all your certs and keys. Follow along with the instr
 
 Notice the '365'. If you want your keys to valide for longer than a year, change this. 
 
-
-`# Create the CA Key and Certificate for signing Client Certs
+<pre><code>
+# Create the CA Key and Certificate for signing Client Certs
 openssl genrsa -des3 -out ca.key 4096
 openssl req -new -x509 -days 365 -key ca.key -out ca.crt
 
@@ -31,10 +31,11 @@ openssl rsa -in client.key -out client.key.pem
 
 # Sign the client certificate with our CA cert.  Unlike signing our own server cert, this is what we want to do.
 openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt`
+</code></pre>
 
 Here's our server:
 
-```javascript
+<pre><code>
 var https = require('https');
 var fs = require('fs');
 
@@ -52,11 +53,11 @@ https.createServer(options, function (req, res) {
     res.writeHead(200);
     res.end("hello world\n");
 }).listen(4443);
-```
+</code></pre>
 
 Here's our test client:
 
-```javascript
+<pre><code>
 var https = require('https');
 var fs = require('fs');
 
@@ -84,5 +85,6 @@ var req = https.request(options, function(res) {
 } );
 
 req.end();
-```
+</code></pre>
+
 
