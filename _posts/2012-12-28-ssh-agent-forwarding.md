@@ -21,7 +21,7 @@ Host examplehost.com
 </pre>
 <p></p>
    - Tell your ssh-agent on A that you want make an identity available through it. Run the follow from a terminal:
-<code>
+<pre>
 ssh-add
 </pre>
 <p></p>
