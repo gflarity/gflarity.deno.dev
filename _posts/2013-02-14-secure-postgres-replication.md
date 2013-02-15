@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-Have having been the MySQL DBA-By-Default (DBA-B-D) in another life, I've must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder) I find lacking concise up-to-date documentation for specific tasks or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I'm not complaining though, rather this my contribution to improving this situation. 
+Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I've must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder) I find lacking concise up-to-date documentation for specific tasks or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I'm not complaining though, rather this my contribution to improving this situation. 
 
 # Why Secure Replication
 
@@ -15,9 +15,10 @@ The Cloud, aka outsourced VPS hosting with an API. Most of the documentation see
 
 TODO
 
-# Secure Replication With Postgres 9.1
+# Get Yourself A Cert
 
-Generate a self signed keypair and CA ( assuming you don't have one already ).
+You'll probably want to generate one yourself. THere's not much point paying for a new one since you can easily distribute your own CA cert. Google it, there's lot of info out there.
+
 
 ## On The Master
 
@@ -29,6 +30,7 @@ max_wal_senders = 3
 </pre>
 <p/>
 
+
 Add the following to authorize the client to replicate against the db. Note that we're only authorizing an SSL connection from replication user on all databases from $SLAVE_IP with password based authentication (md5).
 
 <p/>
@@ -36,6 +38,7 @@ Add the following to authorize the client to replicate against the db. Note that
 hostssl replication all $SLAVE_IP/32    md5
 </pre>
 <p/>
+
 
 The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main
 
