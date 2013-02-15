@@ -5,7 +5,7 @@ categories:
 - blog
 ---
 
-Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I've must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder) I find lacking concise up-to-date documentation for specific tasks or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I'm not complaining though, rather this my contribution to improving this situation. 
+Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I've must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder), I find postgres lacking concise up-to-date documentation for getting specific tasks done quickly,  or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I'm not complaining though, rather this my contribution to improving this situation. 
 
 # Why Secure Replication
 
@@ -20,31 +20,30 @@ TODO
 You'll probably want to generate one yourself. THere's not much point paying for a new one since you can easily distribute your own CA cert. Google it, there's lot of info out there.
 
 
-## On The Master
+# On The Master
 
 Update the postgres.conf on your master to enable WAL support for replication:
-<p/>
+<p>
 <pre>
 wal_level = hot_standby
 max_wal_senders = 3
 </pre>
 <p/>
-
+</p>
 
 Add the following to authorize the client to replicate against the db. Note that we're only authorizing an SSL connection from replication user on all databases from $SLAVE_IP with password based authentication (md5).
 
-<p/>
+<p>
 <pre>
 hostssl replication all $SLAVE_IP/32    md5
 </pre>
-<p/>
-
+</p>
 
 The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main
 
 You'll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of http://gflarity.github.com/2012/07/25/client-ssl-auth/
 
-## On The Slave
+# On The Slave
 
 If postgres is running on the SLAVE, bring it down. You're going to wipe out whatever is there and create a backup from the master. 
 
@@ -52,30 +51,32 @@ Switch to postgres user from here on.
 
 First, delete the the contents of $PG_DATA ( /var/lib/postgresql/9.1/main/ on Ubuntu/Debian ).
 
-<p/>
+<p>
 <pre>
 sudo su - postgres
 rm -rf /var/lib/postgresql/9.1/main/
 </pre>
-<p/>
+</p>
+
 
 Now use pg_basebackup to create the backup we're going to start replicaiton from. You'll be prompted for the postgres user password ($PG_PASS).
 
-<p/>
+<p>
 <pre>
 pg_basebackup -D /var/lib/postgresql/9.1/main/ -x -h $MASTER_IP
 </pre>
-<p/>
+</p>
+
 
 Once complete, create a file called recovery.conf with the following contents inside your postgres data dir on the slave. 
-<p/>
+<p>
 <pre>
 standby_mode = 'on'
 # 'touch' the file below to initiate fail over ( break replication, become read-write )
 trigger_file = '$PG_DATA/failover'
 primary_conninfo='host=$MASTER_IP port=5432 sslmode=verify-ca password=$PG_PASS'
 </pre>
-<p/>
+</p>
 
 Add the followng to the postgres.conf file:
 <p/>
@@ -85,7 +86,7 @@ hot_standby = on
 </p>
 
 Link to the root cert used to verify the master:
-<p/>
+<p>
 <pre>
 ln -s /etc/ssl/
 </pre>
@@ -93,7 +94,7 @@ ln -s /etc/ssl/
 
 
 Start postgres and tail the log, you should see replication starting. On Ubuntu:
-<p/>
+<p>
 <pre>
 service postgres start
 tail -f /var/log/postgresql/postgresql-9.1-main.log
