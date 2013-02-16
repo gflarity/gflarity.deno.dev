@@ -28,7 +28,6 @@ Update the postgres.conf on your master to enable WAL support for replication:
 wal_level = hot_standby
 max_wal_senders = 3
 </pre>
-<p/>
 </p>
 
 Add the following to authorize the client to replicate against the db. Note that we're only authorizing an SSL connection from replication user on all databases from $SLAVE_IP with password based authentication (md5).
@@ -41,7 +40,8 @@ hostssl replication all $SLAVE_IP/32    md5
 
 The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main
 
-You'll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of [this article](http://gflarity.github.com/2012/07/25/client-ssl-auth/).
+You'll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of 
+[this article](http://gflarity.github.com/2012/07/25/client-ssl-auth/).
 
 # On The Slave
 
