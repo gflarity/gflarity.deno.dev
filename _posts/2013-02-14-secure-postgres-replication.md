@@ -38,6 +38,8 @@ hostssl replication all $SLAVE_IP/32    md5
 </pre>
 </p>
 
+Note: You'll need to restart your postgres server for the wal related setting to take affect now.
+
 The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main
 
 You'll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of 
@@ -64,6 +66,19 @@ Now use pg_basebackup to create the backup we're going to start replicaiton from
 <p>
 <pre>
 pg_basebackup -D /var/lib/postgresql/9.1/main/ -x -h $MASTER_IP
+</pre>
+</p>
+
+
+As *root*, create links to the certs, including your CA/root cert.
+
+<p>
+<pre>
+sudo su
+cd /var/lib/postgresql/9.1/main/
+ln -s /etc/ssl/certs/yourcert.crt server.crt
+ln -s /etc/ssl/private/yourkey.key server.key
+ln -s /etc/ssl/certs/root.crt root.cert
 </pre>
 </p>
 
