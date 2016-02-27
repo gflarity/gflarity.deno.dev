@@ -69,6 +69,6 @@ theme: landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:gflarity/gflarity.github.io.git
+  repo: git@github.com:gflarity/test.git
   branch: master
 
