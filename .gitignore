@@ -1,2 +1,4 @@
 .rvmrc
 node_modules/
+.deploy_git/
+public/
