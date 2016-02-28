@@ -4,6 +4,10 @@ date: 2016-02-27 21:02:45
 tags:
 ---
 
+Update:  As of 2016-02-28, the goto declaration ability of WebStorm is FAR superior
+to any Atom packages I've tried. This is the only thing keeping me from using Atom
+as my daily driver for development.
+
 As I write this entry in markdown, I see the live results a separate pane to the right. It's only been a few minutes but so far I'm very impressed with [Atom](http://atom.io). You should go check it out if you haven't already. Here's what I like so far.
 
 ### Don't call them plugins, they're 'packages'
