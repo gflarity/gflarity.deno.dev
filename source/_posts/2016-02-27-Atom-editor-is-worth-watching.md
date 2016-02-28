@@ -8,7 +8,7 @@ As I write this entry in markdown, I see the live results a separate pane to the
 
 ### Don't call them plugins, they're 'packages'
 
-Shrug. Whatever you call them, they're plugin/package system is great. It's easy to install packages and the ones I've installed start working immediately without restart. Smells like there's some good design under the hood.
+Shrug. Whatever you call them, their plugin/package system is great. It's easy to install packages and the ones I've installed start working immediately without restart. Smells like there's some good design under the hood.
 
 ### Command Interface Autocomplete
 
