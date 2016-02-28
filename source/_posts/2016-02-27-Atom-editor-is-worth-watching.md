@@ -18,7 +18,7 @@ Packages can provide various 'commands' you can run. Running these commands is l
 
 In particular the git integration seems interesting. When you edit a file, it indicates which lines have changed, and which are new. With the git-plus package installed it's easy to run git commands without ever leaving your editor. Normally I'm not a big fan of IDE intgration with git. With the command searching interface, it's fun.
 
-### It's build with Electron
+### It's built with Electron
 
 It's built with [Electron](http://http://electron.atom.io/) which is also terrific as well. I think that's separate post. But you should check it out if you want to build desktop apps using node.js + HTML5.
 
