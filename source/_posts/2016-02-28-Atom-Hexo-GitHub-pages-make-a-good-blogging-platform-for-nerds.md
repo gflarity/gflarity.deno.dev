@@ -1,7 +1,9 @@
 ---
 title: Atom + Hexo + GitHub pages make a good blogging platform for nerds
+date: 2016-02-28 14:43:07
 tags:
 ---
+
 
 There are lots of blogging platforms out there. But I want to use markdown with git. So this is how I do it.
 
