@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Minimo</title>
+    <link>http://www.example.com/docs/</link>
+    <description>Recent content in Documentation on Minimo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 28 Feb 2016 14:43:07 +0000</lastBuildDate>
+
+	<atom:link href="http://www.example.com/docs/index.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+      <title>Atom &#43; Hexo &#43; GitHub pages make a good blogging platform for nerds</title>
+      <link>http://www.example.com/docs/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</link>
+      <pubDate>Sun, 28 Feb 2016 14:43:07 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</guid>
+      <description>There are lots of blogging platforms out there. But I want to use markdown with git. So this is how I do it.
+See my older post on Atom here.
+Go install Hexo.
+Install the atom-hexo for Atom.
+Install the git-plus form Atom.
+Setup your GitHub Page repo.
+Configure Hexo to deploy with git.
+You can create new post, commit it, and deploy by using package commands now.</description>
+    </item>
+
+    <item>
+      <title>Atom editor is worth checking out</title>
+      <link>http://www.example.com/docs/2016-02-27-atom-editor-is-worth-watching/</link>
+      <pubDate>Sat, 27 Feb 2016 21:02:45 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2016-02-27-atom-editor-is-worth-watching/</guid>
+      <description>As I write this entry in markdown, I see the live results a separate pane to the right. It&amp;rsquo;s only been a few minutes but so far I&amp;rsquo;m very impressed with Atom. You should go check it out if you haven&amp;rsquo;t already. Here&amp;rsquo;s what I like so far.
+Don&amp;rsquo;t call them plugins, they&amp;rsquo;re &amp;lsquo;packages&amp;rsquo; Shrug. Whatever you call them, their plugin/package system is great. It&amp;rsquo;s easy to install packages and the ones I&amp;rsquo;ve installed start working immediately without restart.</description>
+    </item>
+
+    <item>
+      <title>Buh-bye Jekyll, Hello Hexo</title>
+      <link>http://www.example.com/docs/2016-02-27-buh-bye-jekyll-hello-hexo/</link>
+      <pubDate>Sat, 27 Feb 2016 16:38:31 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2016-02-27-buh-bye-jekyll-hello-hexo/</guid>
+      <description>Buh-bye Jekyll I tried to get Jekyll working again after 3 years on inactivity. It was painful enough that I said eff it. My tolerance for Ruby related pain is extremely low these days.
+Hello Hexo Since we use a lot of Node.js at Kash, I decided to switch to Hexo. It seems to be a polished Jekyll clone. Really the most important thing for me to keep my actual content in markdown.</description>
+    </item>
+
+    <item>
+      <title>Blogging again</title>
+      <link>http://www.example.com/docs/2016-02-27-blogging-again/</link>
+      <pubDate>Sat, 27 Feb 2016 16:29:48 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2016-02-27-blogging-again/</guid>
+      <description>While Kash is keeping me insanely busy, I to start blogging again. I&amp;rsquo;m going to try to write once a week but keep it very MVBP (Minimum Viable Blog Post) ;)</description>
+    </item>
+
+    <item>
+      <title>Secure Replication With Postgres 9.1</title>
+      <link>http://www.example.com/docs/2013-02-14-secure-postgres-replication/</link>
+      <pubDate>Thu, 14 Feb 2013 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2013-02-14-secure-postgres-replication/</guid>
+      <description>Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I&amp;rsquo;ve must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder), I find postgres lacking concise up-to-date documentation for getting specific tasks done quickly, or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts, together in order to get what I wanted.</description>
+    </item>
+
+    <item>
+      <title>SSH Agent Forwarding</title>
+      <link>http://www.example.com/docs/2012-12-28-ssh-agent-forwarding/</link>
+      <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2012-12-28-ssh-agent-forwarding/</guid>
+      <description>I was having some issues getting my SSH Agent to forward. Turns out my understanding was completely inadequate. Here&amp;rsquo;s a quick run through for anyone else who might benefit.
+High Level Concept Say you have hosts A B C and you want to connect like so: A-&amp;gt;B-&amp;gt;C. SSH allows you forward your &amp;lsquo;Agent&amp;rsquo; such that your credentials for host A can be used on on host C as if B wasn&amp;rsquo;t even involved.</description>
+    </item>
+
+    <item>
+      <title>Client SSL Auth</title>
+      <link>http://www.example.com/docs/2012-07-25-client-ssl-auth/</link>
+      <pubDate>Wed, 25 Jul 2012 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2012-07-25-client-ssl-auth/</guid>
+      <description>The HTTPS system allows you to communicate securely with a server and trust it&amp;rsquo;s idenity. This is how it&amp;rsquo;s generally used. However it&amp;rsquo;s also possible for the server to trust the identity of the client as well.
+It&amp;rsquo;s fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.
+Keys and Certs First, you&amp;rsquo;re going to need all your certs and keys.</description>
+    </item>
+
+    <item>
+      <title>Finding Quality Node Modules</title>
+      <link>http://www.example.com/docs/2012-04-05-finding-node-modules/</link>
+      <pubDate>Thu, 05 Apr 2012 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2012-04-05-finding-node-modules/</guid>
+      <description>Last night we had a great second Node.js Toronto meetup. There was some frustration directed towards the problem knowing which modules are of high quality. This is an acknowledged pain point in the node.js community but it&amp;rsquo;ll get better soon.
+It&amp;rsquo;s worth noting this problem has been discussed a couple times by the current node Project Manager isaacs on the NodeUp* podcast, though I&amp;rsquo;m not exactly sure which. Apparently they&amp;rsquo;re working a new version of npm website right now.</description>
+    </item>
+
+    <item>
+      <title>Disqus On Github</title>
+      <link>http://www.example.com/docs/2012-03-18-disqus-on-github/</link>
+      <pubDate>Sun, 18 Mar 2012 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2012-03-18-disqus-on-github/</guid>
+      <description>I had some trouble getting disqus to work with my github page. Turns out I needed to add the following to my disqus javascript:
+ var disqus_url = &#39;http://gflarity.github.com{{ page.url }}&#39;;
+Now it all works like a charm.
+Thanks to http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/.</description>
+    </item>
+
+    <item>
+      <title>Hello World!</title>
+      <link>http://www.example.com/docs/2012-03-07-helloworld/</link>
+      <pubDate>Wed, 07 Mar 2012 00:00:00 +0000</pubDate>
+
+      <guid>http://www.example.com/docs/2012-03-07-helloworld/</guid>
+      <description>Hello World!</description>
+    </item>
+
+  </channel>
+</rss>
