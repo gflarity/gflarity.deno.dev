@@ -1,4 +1,4 @@
-~~---
+---
 title: About
 description: 42
 menu: main
