@@ -5,18 +5,18 @@
     <link>http://www.example.com/authors/</link>
     <description>Recent content in Authors on Minimo</description>
     <generator>Hugo -- gohugo.io</generator>
-
+    
 	<atom:link href="http://www.example.com/authors/index.xml" rel="self" type="application/rss+xml" />
-
-
+    
+    
     <item>
       <title>Muniftanjim</title>
       <link>http://www.example.com/authors/muniftanjim/</link>
       <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
-
+      
       <guid>http://www.example.com/authors/muniftanjim/</guid>
       <description></description>
     </item>
-
+    
   </channel>
 </rss>
