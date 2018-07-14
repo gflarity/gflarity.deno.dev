@@ -69,17 +69,17 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-codepen = "MunifTanjim"
-email = "contact@example.com"
-facebook = "MunifTanjim"
-github = "MunifTanjim"
-gitlab = "MunifTanjim"
-instagram = "MunifTanjim"
-linkedin = "muniftanjim"
-twitter = "MunifTanjim"
-telegram = "MunifTanjim"
-google_scholar = "qc6CJjYAAAAJ"
-youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+#codepen = "MunifTanjim"
+#email = "contact@example.com"
+#facebook = "MunifTanjim"
+github = "gflarity"
+#gitlab = "MunifTanjim"
+#instagram = "MunifTanjim"
+linkedin = "gflarity"
+twitter = "gflarity"
+#telegram = "MunifTanjim"
+#google_scholar = "qc6CJjYAAAAJ"
+#youtube = "UCT-U0rNerYxItGcuoPX-WYA"
 
 [params.comments]
 enable = false
