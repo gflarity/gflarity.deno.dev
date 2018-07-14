@@ -33,7 +33,7 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "MunifTanjim"
+holder = "Geoffrey David Flarity"
 startYear = "2017"
 suffix = ""
 
@@ -90,8 +90,8 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 
 [params.comments.staticman.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "gflarity"
+repository = "gflarity.github.io"
 branch = "master"
 
 # Utterances: https://utteranc.es
@@ -100,8 +100,8 @@ enable = false
 issueTerm = "pathname" # pathname / url / title
 
 [params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = "gflarity"
+repository = "gflarity.github.io"
 
 [params.search]
 client = "" # algolia / fuse / lunr
@@ -124,7 +124,7 @@ page = "/:slug/"
 name = "Repo"
 weight = -10
 identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
+url = "https://github.com/gflarity/gflarity.github.io"
 
 [blackfriday]
 hrefTargetBlank = true
