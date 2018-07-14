@@ -22,13 +22,12 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
     </item>
     
     <item>
-      <title></title>
-      <link>http://www.example.com/</link>
+      <title>About</title>
+      <link>http://www.example.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.example.com/</guid>
-      <description>~~&amp;mdash; title: About description: 42 menu: main
-weight: -210 Geoff needs contrive something that doesn&amp;rsquo;t sound contrived.</description>
+      <guid>http://www.example.com/about/</guid>
+      <description>Geoff needs contrive something that doesn&amp;rsquo;t sound contrived.</description>
     </item>
     
     <item>

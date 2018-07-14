@@ -22,6 +22,15 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
     </item>
     
     <item>
+      <title>About</title>
+      <link>http://www.example.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/about/</guid>
+      <description>Geoff needs contrive something that doesn&amp;rsquo;t sound contrived.</description>
+    </item>
+    
+    <item>
       <title>Atom &#43; Hexo &#43; GitHub pages make a good blogging platform for nerds</title>
       <link>http://www.example.com/docs/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</link>
       <pubDate>Sun, 28 Feb 2016 14:43:07 +0000</pubDate>
@@ -125,16 +134,6 @@ Thanks to http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/.</d
       
       <guid>http://www.example.com/docs/2012-03-07-helloworld/</guid>
       <description>Hello World!</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://www.example.com/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.example.com/</guid>
-      <description>~~&amp;mdash; title: About description: 42 menu: main
-weight: -210 Geoff needs contrive something that doesn&amp;rsquo;t sound contrived.</description>
     </item>
     
     <item>

@@ -18,6 +18,10 @@
   </url>
   
   <url>
+    <loc>http://www.example.com/about/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.example.com/docs/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</loc>
     <lastmod>2016-02-28T14:43:07+00:00</lastmod>
   </url>
@@ -65,10 +69,6 @@
   <url>
     <loc>http://www.example.com/docs/2012-03-07-helloworld/</loc>
     <lastmod>2012-03-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.example.com/</loc>
   </url>
   
   <url>
