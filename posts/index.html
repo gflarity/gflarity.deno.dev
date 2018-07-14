@@ -4,19 +4,21 @@
 <head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content=''>
+<meta name='description' content='Minimalist theme for Hugo'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='Search • Minimo'>
-<meta property='og:description' content=''>
-<meta property='og:url' content='http://www.example.com/search/'>
+<meta property='og:title' content='Posts • Minimo'>
+<meta property='og:description' content='Minimalist theme for Hugo'>
+<meta property='og:url' content='http://www.example.com/posts/'>
 <meta property='og:site_name' content='Minimo'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='website'><meta property='og:updated_time' content='2017-09-28T08:00:00&#43;06:00'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.40.1" />
 
-  <title>Search • Minimo</title>
-  <link rel='canonical' href='http://www.example.com/search/'>
+  <title>Posts • Minimo</title>
+  <link rel='canonical' href='http://www.example.com/posts/'>
+  
+    <link href="http://www.example.com/posts/index.xml" rel="alternate" type="application/rss+xml" title="Minimo" />
   
   
   <link rel='icon' href='/favicon.ico'>
@@ -29,7 +31,7 @@
 </head>
 
 
-<body class='page type-page layout-search has-sidebar'>
+<body class='section type-posts has-sidebar'>
 
   <div class='site'>
 
@@ -54,11 +56,23 @@
   </header>
 
 </section>
+<section class='widget widget-search sep-after'>
+  <header>
+    <h4 class='title widget-title'>Search</h4>
+  </header>
+
+  <form action='/search' id='search-form' class='search-form'>
+    <label>
+      <span class='screen-reader-text'>Search</span>
+      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
+    </label></form>
+
+</section>
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/'>Home</a></li><li class='item'>
-  <a href='/posts/'>Posts</a></li></ul>
+  <a href='/'>Home</a></li><li class='item current'>
+  <a aria-current='page' href='/posts/'>Posts</a></li></ul>
     </div>
   </nav>
 
@@ -104,8 +118,8 @@
 </button>
     <ul><li class='item'>
         <a href='/'>Home</a>
-      </li><li class='item'>
-        <a href='/posts/'>Posts</a>
+      </li><li class='item current'>
+        <a aria-current='page' href='/posts/'>Posts</a>
       </li><li class='item'>
         <a href='/typography/'>Typography</a>
       </li><li class='item'>
@@ -129,7 +143,7 @@
 <header class='header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>Search</h1>
+      <h1 class='title'>Posts</h1>
 
       
 
@@ -140,31 +154,125 @@
 
 
 
-<div class='container'>
-  <section class='widget widget-search sep-after'>
-  <header>
-    <h4 class='title widget-title'>Search</h4>
-  </header>
+<div class='container list-container'>
+  <ul class='list'>
+    
+      <li class='item'>
+  <div class='meta'>
+    <span>
+  <span class='screen-reader-text'>Posted on </span>
+  <time datetime='2016-02-28T14:43:07Z'>2016, Feb 28</time>
+</span>
 
-  <form action='/search' id='search-form' class='search-form'>
-    <label>
-      <span class='screen-reader-text'>Search</span>
-      <input id='search-term' class='search-term' type='search' name='q' placeholder='Search&hellip;'>
-    </label><button type='submit' class='search-submit'>
-      <span class='screen-reader-text'>Search</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  </div>
+  <header class='item-header'>
+    <h3 class='item-title'>
+      <a href='/posts/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/'>Atom &#43; Hexo &#43; GitHub pages make a good blogging platform for nerds</a>
+    </h3>
+  </header>
+</li>
+
+    
+      <li class='item'>
+  <div class='meta'>
+    <span>
+  <span class='screen-reader-text'>Posted on </span>
+  <time datetime='2016-02-27T21:02:45Z'>2016, Feb 27</time>
+</span>
+
+  </div>
+  <header class='item-header'>
+    <h3 class='item-title'>
+      <a href='/posts/2016-02-27-atom-editor-is-worth-watching/'>Atom editor is worth checking out</a>
+    </h3>
+  </header>
+</li>
+
+    
+      <li class='item'>
+  <div class='meta'>
+    <span>
+  <span class='screen-reader-text'>Posted on </span>
+  <time datetime='2016-02-27T16:38:31Z'>2016, Feb 27</time>
+</span>
+
+  </div>
+  <header class='item-header'>
+    <h3 class='item-title'>
+      <a href='/posts/2016-02-27-buh-bye-jekyll-hello-hexo/'>Buh-bye Jekyll, Hello Hexo</a>
+    </h3>
+  </header>
+</li>
+
+    
+      <li class='item'>
+  <div class='meta'>
+    <span>
+  <span class='screen-reader-text'>Posted on </span>
+  <time datetime='2016-02-27T16:29:48Z'>2016, Feb 27</time>
+</span>
+
+  </div>
+  <header class='item-header'>
+    <h3 class='item-title'>
+      <a href='/posts/2016-02-27-blogging-again/'>Blogging again</a>
+    </h3>
+  </header>
+</li>
+
+    
+      <li class='item'>
+  <div class='meta'>
+    <span>
+  <span class='screen-reader-text'>Posted on </span>
+  <time datetime='2013-02-14T00:00:00Z'>2013, Feb 14</time>
+</span>
+
+  </div>
+  <header class='item-header'>
+    <h3 class='item-title'>
+      <a href='/posts/2013-02-14-secure-postgres-replication/'>Secure Replication With Postgres 9.1</a>
+    </h3>
+  </header>
+</li>
+
+    
+  </ul>
+
   
-  <circle cx="11" cy="11" r="8" />
-  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+<nav id='pagination'>
+  <div class='page-links'>
+
+    
+      
+      <span aria-current='page' class='page-link current'>
+        <span class='screen-reader-text'>Current page: </span>1</span>
+      
+    
+      
+      <a class='page-link' href='/posts/page/2/'>
+        <span class='screen-reader-text'>Page: </span>2</a>
+      
+    
+
+    
+    <a class='page-link next' href='/posts/page/2/'>
+      <span class='screen-reader-text'>Next page</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
   
 </svg>
-</button></form>
+</a>
+    
 
-</section>
+  </div>
+</nav>
 
 
-  <ul id='search-results' class='list search-results' data-results-empty='Nothing found!' data-searching='Searching'>
-  </ul>
-</div>      </main>
+</div>
+
+      </main>
 
       <footer id='footer' class='footer'>
         <div class='container sep-before'><section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
