@@ -9,7 +9,7 @@
   
   <url>
     <loc>http://www.example.com/posts/</loc>
-    <lastmod>2016-02-28T14:43:07+00:00</lastmod>
+    <lastmod>2018-07-14T22:13:36-04:00</lastmod>
   </url>
   
   <url>
@@ -19,6 +19,11 @@
   
   <url>
     <loc>http://www.example.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.example.com/posts/2018-07-14-blogging-again/</loc>
+    <lastmod>2018-07-14T22:13:36-04:00</lastmod>
   </url>
   
   <url>

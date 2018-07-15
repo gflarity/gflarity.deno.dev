@@ -5,10 +5,19 @@
     <link>http://www.example.com/posts/</link>
     <description>Recent content in Posts on gflarity web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Feb 2016 14:43:07 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Jul 2018 22:13:36 -0400</lastBuildDate>
     
 	<atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018 07 14 Blogging Again</title>
+      <link>http://www.example.com/posts/2018-07-14-blogging-again/</link>
+      <pubDate>Sat, 14 Jul 2018 22:13:36 -0400</pubDate>
+      
+      <guid>http://www.example.com/posts/2018-07-14-blogging-again/</guid>
+      <description>Blogging again!? This just a quick note where I pretend someone else is actually reading this. I&amp;rsquo;m back to blogging again. Sort of&amp;hellip; I&amp;rsquo;m going to try my hand at making in depth technology related explorations. In the process of making these videos I&amp;rsquo;m going to inevitably create talking notes. I&amp;rsquo;m planning to polish these notes into blog posts that accompany the video. At least this is the current plan.</description>
+    </item>
     
     <item>
       <title>Atom &#43; Hexo &#43; GitHub pages make a good blogging platform for nerds</title>
