@@ -190,26 +190,26 @@ One min read
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4GrPHC8EXcM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<h1 id="installing-virtualbox">Installing VirtualBox</h1>
+<h2 id="installing-virtualbox">Installing VirtualBox</h2>
 
 <p><a href="https://www.virtualbox.org/wiki/Linux_Downloads" target="_blank">Virtualbox Download page</a>. I went with the Ubuntu 18.04 .deb file which I just clicked on.</p>
 
-<h1 id="installing-kubectl">Installing Kubectl</h1>
+<h2 id="installing-kubectl">Installing Kubectl</h2>
 
-<h2 id="os-x">OS X</h2>
+<h3 id="os-x">OS X</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#66d9ef">$(</span>curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#66d9ef">)</span>/bin/darwin/amd64/kubectl
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl</code></pre></div>
-<h2 id="linux">Linux</h2>
+<h3 id="linux">Linux</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -LO https://storage.googleapis.com/kubernetes-release/release/<span style="color:#66d9ef">$(</span>curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt<span style="color:#66d9ef">)</span>/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl</code></pre></div>
-<h1 id="installing-minikube">Installing Minikube</h1>
+<h2 id="installing-minikube">Installing Minikube</h2>
 
-<h2 id="os-x-1">OS X</h2>
+<h3 id="os-x-1">OS X</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-darwin-amd64 <span style="color:#f92672">&amp;&amp;</span> chmod +x minikube <span style="color:#f92672">&amp;&amp;</span> sudo mv minikube /usr/local/bin/
 minikube start</code></pre></div>
-<h2 id="linux-1">Linux</h2>
+<h3 id="linux-1">Linux</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-linux-amd64 <span style="color:#f92672">&amp;&amp;</span> chmod +x minikube <span style="color:#f92672">&amp;&amp;</span> sudo mv minikube /usr/local/bin/
 minikube start</code></pre></div>
 </div>
