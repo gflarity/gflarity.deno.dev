@@ -31,6 +31,16 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
     </item>
     
     <item>
+      <title>2018 07 16 Minikube</title>
+      <link>http://www.example.com/posts/2018-07-16-minikube/</link>
+      <pubDate>Mon, 16 Jul 2018 22:04:53 -0400</pubDate>
+      
+      <guid>http://www.example.com/posts/2018-07-16-minikube/</guid>
+      <description>During the process of preparing for a another vidcast/vlog, it occurred to me that I was taking installing Minikube a bit for granted. It&amp;rsquo;s super easy of course, but that isn&amp;rsquo;t immediately obvious nor is how valuable Minikube is. So I did a quick vidcast in order to both practice and make sure this info was out there. Enjoy:
+ Installing VirtualBox Virtualbox Download page. I went with the Ubuntu 18.</description>
+    </item>
+    
+    <item>
       <title>2018 07 14 Blogging Again</title>
       <link>http://www.example.com/posts/2018-07-14-blogging-again/</link>
       <pubDate>Sat, 14 Jul 2018 22:13:36 -0400</pubDate>
