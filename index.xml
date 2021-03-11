@@ -1,43 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on gflarity web</title>
     <link>http://www.example.com/</link>
     <description>Recent content in Home on gflarity web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 Sep 2017 08:00:00 +0600</lastBuildDate>
-    
-	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Typography</title>
-      <link>http://www.example.com/typography/</link>
-      <pubDate>Thu, 28 Sep 2017 08:00:00 +0600</pubDate>
-      
-      <guid>http://www.example.com/typography/</guid>
-      <description>Here is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Heading 2 Another one. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://www.example.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.example.com/about/</guid>
-      <description>Geoff needs contrive something that doesn&amp;rsquo;t sound contrived.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 16 Jul 2018 22:04:53 -0400</lastBuildDate><atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2018 07 16 Minikube</title>
       <link>http://www.example.com/posts/2018-07-16-minikube/</link>
       <pubDate>Mon, 16 Jul 2018 22:04:53 -0400</pubDate>
       
       <guid>http://www.example.com/posts/2018-07-16-minikube/</guid>
-      <description>During the process of preparing for a another vidcast/vlog, it occurred to me that I was taking installing Minikube a bit for granted. It&amp;rsquo;s super easy of course, but that isn&amp;rsquo;t immediately obvious nor is how valuable Minikube is. So I did a quick vidcast in order to both practice and make sure this info was out there. Enjoy:
- Installing VirtualBox Virtualbox Download page. I went with the Ubuntu 18.</description>
+      <description>
+        
+          &lt;p&gt;During the process of preparing for a another vidcast/vlog, it occurred to me that I was taking installing Minikube a bit for granted. It&amp;rsquo;s super easy of course, but that isn&amp;rsquo;t immediately obvious nor is how valuable Minikube is. So I did a quick vidcast in order to both practice and make sure this info was out there. Enjoy:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;installing-virtualbox&#34;&gt;Installing VirtualBox&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Linux_Downloads&#34;&gt;Virtualbox Download page&lt;/a&gt;. I went with the Ubuntu 18.04 .deb file which I just clicked on.&lt;/p&gt;
+&lt;h2 id=&#34;installing-kubectl&#34;&gt;Installing Kubectl&lt;/h2&gt;
+&lt;h3 id=&#34;os-x&#34;&gt;OS X&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -LO https://storage.googleapis.com/kubernetes-release/release/&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;/bin/darwin/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -LO https://storage.googleapis.com/kubernetes-release/release/&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-minikube&#34;&gt;Installing Minikube&lt;/h2&gt;
+&lt;h3 id=&#34;os-x-1&#34;&gt;OS X&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-darwin-amd64 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x minikube &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mv minikube /usr/local/bin/
+minikube start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-linux-amd64 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x minikube &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mv minikube /usr/local/bin/
+minikube start
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        
+      </description>
     </item>
     
     <item>
@@ -46,7 +47,19 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
       <pubDate>Sat, 14 Jul 2018 22:13:36 -0400</pubDate>
       
       <guid>http://www.example.com/posts/2018-07-14-blogging-again/</guid>
-      <description>Blogging again!? This just a quick note where I pretend someone else is actually reading this. I&amp;rsquo;m back to blogging again. Sort of&amp;hellip; I&amp;rsquo;m going to try my hand at making in depth technology related explorations. In the process of making these videos I&amp;rsquo;m going to inevitably create talking notes. I&amp;rsquo;m planning to polish these notes into blog posts that accompany the video. At least this is the current plan.</description>
+      <description>
+        
+          &lt;h4 id=&#34;blogging-again&#34;&gt;Blogging again!?&lt;/h4&gt;
+&lt;p&gt;This just a quick note where I pretend someone else is actually reading this. I&amp;rsquo;m back to blogging again. Sort of&amp;hellip; I&amp;rsquo;m going to try my hand at making in depth technology related explorations. In the process of making these videos I&amp;rsquo;m going to inevitably create talking notes. I&amp;rsquo;m planning to polish these notes into blog posts that accompany the video.  At least this is the current plan.&lt;/p&gt;
+&lt;h4 id=&#34;why&#34;&gt;Why?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Online videos/youtube is are a huge leap in terms of educational advancement. I&amp;rsquo;d like to be a small art of that.&lt;/li&gt;
+&lt;li&gt;I agonize over the written form in a way I just don&amp;rsquo;t with video. At least presently. I&amp;rsquo;m hoping to not let perfect be the enemy of the good.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a lot of different topics I&amp;rsquo;d like to explore and share.&lt;/li&gt;
+&lt;/ol&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -55,14 +68,19 @@ Heading 3 Yet another, but centered! Excepteur sint occaecat cupidatat non proid
       <pubDate>Sun, 28 Feb 2016 14:43:07 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</guid>
-      <description>There are lots of blogging platforms out there. But I want to use markdown with git. So this is how I do it.
-See my older post on Atom here.
-Go install Hexo.
-Install the atom-hexo for Atom.
-Install the git-plus form Atom.
-Setup your GitHub Page repo.
-Configure Hexo to deploy with git.
-You can create new post, commit it, and deploy by using package commands now.</description>
+      <description>
+        
+          &lt;p&gt;There are lots of blogging platforms out there. But I want to use markdown with git. So this is how I do it.&lt;/p&gt;
+&lt;p&gt;See my older post on &lt;a href=&#34;https://gflarity.github.io/2016/02/27/Atom-editor-is-worth-watching/&#34;&gt;Atom here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go install &lt;a href=&#34;http://hexo.io&#34;&gt;Hexo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install the &lt;a href=&#34;https://atom.io/packages/atom-hexo&#34;&gt;atom-hexo&lt;/a&gt; for Atom.&lt;/p&gt;
+&lt;p&gt;Install the &lt;a href=&#34;https://atom.io/packages/git-plus&#34;&gt;git-plus&lt;/a&gt; form Atom.&lt;/p&gt;
+&lt;p&gt;Setup your &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Page&lt;/a&gt; repo.&lt;/p&gt;
+&lt;p&gt;Configure Hexo to &lt;a href=&#34;https://jdpaton.github.io/2012/11/05/setup-hexo/&#34;&gt;deploy with git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can create new post, commit it, and deploy by using package commands now.&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -71,8 +89,25 @@ You can create new post, commit it, and deploy by using package commands now.</d
       <pubDate>Sat, 27 Feb 2016 21:02:45 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2016-02-27-atom-editor-is-worth-watching/</guid>
-      <description>As I write this entry in markdown, I see the live results a separate pane to the right. It&amp;rsquo;s only been a few minutes but so far I&amp;rsquo;m very impressed with Atom. You should go check it out if you haven&amp;rsquo;t already. Here&amp;rsquo;s what I like so far.
-Don&amp;rsquo;t call them plugins, they&amp;rsquo;re &amp;lsquo;packages&amp;rsquo; Shrug. Whatever you call them, their plugin/package system is great. It&amp;rsquo;s easy to install packages and the ones I&amp;rsquo;ve installed start working immediately without restart.</description>
+      <description>
+        
+          &lt;p&gt;As I write this entry in markdown, I see the live results a separate pane to the right. It&amp;rsquo;s only been a few minutes but so far I&amp;rsquo;m very impressed with &lt;a href=&#34;http://atom.io&#34;&gt;Atom&lt;/a&gt;. You should go check it out if you haven&amp;rsquo;t already. Here&amp;rsquo;s what I like so far.&lt;/p&gt;
+&lt;h3 id=&#34;dont-call-them-plugins-theyre-packages&#34;&gt;Don&amp;rsquo;t call them plugins, they&amp;rsquo;re &amp;lsquo;packages&amp;rsquo;&lt;/h3&gt;
+&lt;p&gt;Shrug. Whatever you call them, their plugin/package system is great. It&amp;rsquo;s easy to install packages and the ones I&amp;rsquo;ve installed start working immediately without restart. Smells like there&amp;rsquo;s some good design under the hood.&lt;/p&gt;
+&lt;h3 id=&#34;command-interface-autocomplete&#34;&gt;Command Interface Autocomplete&lt;/h3&gt;
+&lt;p&gt;Packages can provide various &amp;lsquo;commands&amp;rsquo; you can run. Running these commands is like spot line on OS X. You type command + shift + P, then as you start typing it searches the commands. Very nice.&lt;/p&gt;
+&lt;h3 id=&#34;git-integration-with-git-plus&#34;&gt;Git integration with git-plus&lt;/h3&gt;
+&lt;p&gt;In particular the git integration seems interesting. When you edit a file, it indicates which lines have changed, and which are new. With the git-plus package installed it&amp;rsquo;s easy to run git commands without ever leaving your editor. Normally I&amp;rsquo;m not a big fan of IDE intgration with git. With the command searching interface, it&amp;rsquo;s fun.&lt;/p&gt;
+&lt;h3 id=&#34;its-built-with-electron&#34;&gt;It&amp;rsquo;s built with Electron&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s built with &lt;a href=&#34;http://http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; which is also terrific as well. I think that&amp;rsquo;s separate post. But you should check it out if you want to build desktop apps using node.js + HTML5.&lt;/p&gt;
+&lt;h3 id=&#34;its-floss&#34;&gt;It&amp;rsquo;s FLOSS!&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Free_and_open-source_software&#34;&gt;FLOSS&lt;/a&gt;. Turns out it&amp;rsquo;s made by GitHub. Lots of great FLOSS coming out of GitHub. Thanks!&lt;/p&gt;
+&lt;p&gt;Update (2016-02-28):  The goto declaration ability of WebStorm is FAR superior
+to any Atom packages I&amp;rsquo;ve tried. This is the only thing keeping me from using Atom
+as my daily driver for development.&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -81,8 +116,15 @@ Don&amp;rsquo;t call them plugins, they&amp;rsquo;re &amp;lsquo;packages&amp;rsq
       <pubDate>Sat, 27 Feb 2016 16:38:31 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2016-02-27-buh-bye-jekyll-hello-hexo/</guid>
-      <description>Buh-bye Jekyll I tried to get Jekyll working again after 3 years on inactivity. It was painful enough that I said eff it. My tolerance for Ruby related pain is extremely low these days.
-Hello Hexo Since we use a lot of Node.js at Kash, I decided to switch to Hexo. It seems to be a polished Jekyll clone. Really the most important thing for me to keep my actual content in markdown.</description>
+      <description>
+        
+          &lt;h3 id=&#34;buh-bye-jekyll&#34;&gt;Buh-bye Jekyll&lt;/h3&gt;
+&lt;p&gt;I tried to get Jekyll working again after 3 years on inactivity. It was painful enough that I said eff it.  My tolerance for Ruby related pain is extremely low these days.&lt;/p&gt;
+&lt;h3 id=&#34;hello-hexo&#34;&gt;Hello Hexo&lt;/h3&gt;
+&lt;p&gt;Since we use a lot of Node.js at Kash, I decided to switch to Hexo. It seems to be a polished Jekyll clone. Really the most important thing for me to keep my actual content in markdown. I expect to move again, and markdown does the job.&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -91,7 +133,12 @@ Hello Hexo Since we use a lot of Node.js at Kash, I decided to switch to Hexo. I
       <pubDate>Sat, 27 Feb 2016 16:29:48 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2016-02-27-blogging-again/</guid>
-      <description>While Kash is keeping me insanely busy, I to start blogging again. I&amp;rsquo;m going to try to write once a week but keep it very MVBP (Minimum Viable Blog Post) ;)</description>
+      <description>
+        
+          &lt;p&gt;While &lt;a href=&#34;http://withkash.com&#34;&gt;Kash&lt;/a&gt; is keeping me insanely busy, I to start blogging again. I&amp;rsquo;m going to try to write once a week but keep it very MVBP (Minimum Viable Blog Post) ;)&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -100,7 +147,44 @@ Hello Hexo Since we use a lot of Node.js at Kash, I decided to switch to Hexo. I
       <pubDate>Thu, 14 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2013-02-14-secure-postgres-replication/</guid>
-      <description>Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I&amp;rsquo;ve must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder), I find postgres lacking concise up-to-date documentation for getting specific tasks done quickly, or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts, together in order to get what I wanted.</description>
+      <description>
+        
+          &lt;p&gt;Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I&amp;rsquo;ve must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder), I find postgres lacking concise up-to-date documentation for getting specific tasks done quickly,  or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I&amp;rsquo;m not complaining though, rather this my contribution to improving this situation.&lt;/p&gt;
+&lt;h1 id=&#34;why-secure-replication&#34;&gt;Why Secure Replication&lt;/h1&gt;
+&lt;p&gt;The Cloud, aka outsourced VPS hosting with an API. Most of the documentation seems to expect you to be running this in our private secure network partitioned data center.&lt;/p&gt;
+&lt;h1 id=&#34;high-level-overview&#34;&gt;High Level Overview&lt;/h1&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h1 id=&#34;get-yourself-a-cert&#34;&gt;Get Yourself A Cert&lt;/h1&gt;
+&lt;p&gt;You&amp;rsquo;ll probably want to generate one yourself. THere&amp;rsquo;s not much point paying for a new one since you can easily distribute your own CA cert. Google it, there&amp;rsquo;s lot of info out there.&lt;/p&gt;
+&lt;h1 id=&#34;on-the-master&#34;&gt;On The Master&lt;/h1&gt;
+&lt;p&gt;Update the postgres.conf on your master to enable WAL support for replication:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Add the following to authorize the client to replicate against the db. Note that we&amp;rsquo;re only authorizing an SSL connection from replication user on all databases from $SLAVE_IP with password based authentication (md5).&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Note: You&amp;rsquo;ll need to restart your postgres server for the wal related setting to take affect now.&lt;/p&gt;
+&lt;p&gt;The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of
+&lt;a href=&#34;http://gflarity.github.com/2012/07/25/client-ssl-auth/&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;on-the-slave&#34;&gt;On The Slave&lt;/h1&gt;
+&lt;p&gt;If postgres is running on the SLAVE, bring it down. You&amp;rsquo;re going to wipe out whatever is there and create a backup from the master.&lt;/p&gt;
+&lt;p&gt;Switch to postgres user from here on.&lt;/p&gt;
+&lt;p&gt;First, delete the the contents of $PG_DATA ( /var/lib/postgresql/9.1/main/ on Ubuntu/Debian ).&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Now use pg_basebackup to create the backup we&amp;rsquo;re going to start replicaiton from. You&amp;rsquo;ll be prompted for the postgres user password ($PG_PASS).&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;As &lt;em&gt;root&lt;/em&gt;, create links to the certs, including your CA/root cert.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Once complete, create a file called recovery.conf with the following contents inside your postgres data dir on the slave.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Add the followng to the postgres.conf file:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Link to the root cert used to verify the master:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Start postgres and tail the log, you should see replication starting. On Ubuntu:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -109,8 +193,22 @@ Hello Hexo Since we use a lot of Node.js at Kash, I decided to switch to Hexo. I
       <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2012-12-28-ssh-agent-forwarding/</guid>
-      <description>I was having some issues getting my SSH Agent to forward. Turns out my understanding was completely inadequate. Here&amp;rsquo;s a quick run through for anyone else who might benefit.
-High Level Concept Say you have hosts A B C and you want to connect like so: A-&amp;gt;B-&amp;gt;C. SSH allows you forward your &amp;lsquo;Agent&amp;rsquo; such that your credentials for host A can be used on on host C as if B wasn&amp;rsquo;t even involved.</description>
+      <description>
+        
+          &lt;p&gt;I was having some issues getting my SSH Agent to forward. Turns out my understanding was completely inadequate. Here&amp;rsquo;s a quick run through for anyone else who might benefit.&lt;/p&gt;
+&lt;h1 id=&#34;high-level-concept&#34;&gt;High Level Concept&lt;/h1&gt;
+&lt;p&gt;Say you have hosts A B C and you want to connect like so: A-&amp;gt;B-&amp;gt;C. SSH allows you forward your &amp;lsquo;Agent&amp;rsquo; such that your credentials for host A can be used on on host C as if B wasn&amp;rsquo;t even involved. It does so by forwarding a unix domain socket provided by A&amp;rsquo;s agent to B (usually in /tmp/ssh-??) when you connect from A-&amp;gt;B. Then when you connect B-&amp;gt;C instead of C interacting with B&amp;rsquo;s agent, it interacts with the forwarded Agent provided by A.&lt;/p&gt;
+&lt;h1 id=&#34;configuration&#34;&gt;Configuration&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure &amp;lsquo;AllowAgentForwarding no&amp;rsquo; is &lt;em&gt;not&lt;/em&gt; set it in /etc/ssh/sshd_config on B (it defaults to yes if it&amp;rsquo;s not explicitly set to no).&lt;/li&gt;
+&lt;li&gt;Make sure your client config has &amp;lsquo;ForwardAgent yes&amp;rsquo;, you&amp;rsquo;ll likely want to do this which specific hosts you trust/control, as a program on B will able to login as you (only while you&amp;rsquo;re connected) if it wants. Edit ~/.ssh/config and add something similar to the following:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -119,9 +217,26 @@ High Level Concept Say you have hosts A B C and you want to connect like so: A-&
       <pubDate>Wed, 25 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2012-07-25-client-ssl-auth/</guid>
-      <description>The HTTPS system allows you to communicate securely with a server and trust it&amp;rsquo;s idenity. This is how it&amp;rsquo;s generally used. However it&amp;rsquo;s also possible for the server to trust the identity of the client as well.
-It&amp;rsquo;s fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.
-Keys and Certs First, you&amp;rsquo;re going to need all your certs and keys.</description>
+      <description>
+        
+          &lt;p&gt;The HTTPS system allows you to communicate securely with a server and trust it&amp;rsquo;s idenity. This is how it&amp;rsquo;s generally used. However it&amp;rsquo;s also possible for the server to trust the identity of the client as well.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.&lt;/p&gt;
+&lt;h1 id=&#34;keys-and-certs&#34;&gt;Keys and Certs&lt;/h1&gt;
+&lt;p&gt;First, you&amp;rsquo;re going to need all your certs and keys. Follow along with the instructions below to do so. It&amp;rsquo;s adapted from &lt;a href=&#34;http://blog.nategood.com/client-side-certificate-authentication-in-ngi&#34;&gt;this&lt;/a&gt; article.&lt;/p&gt;
+&lt;p&gt;Notice the &amp;lsquo;365&amp;rsquo;. If you want your keys to valide for longer than a year, change this.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;server&#34;&gt;Server:&lt;/h1&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -130,8 +245,32 @@ Keys and Certs First, you&amp;rsquo;re going to need all your certs and keys.</d
       <pubDate>Thu, 05 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2012-04-05-finding-node-modules/</guid>
-      <description>Last night we had a great second Node.js Toronto meetup. There was some frustration directed towards the problem knowing which modules are of high quality. This is an acknowledged pain point in the node.js community but it&amp;rsquo;ll get better soon.
-It&amp;rsquo;s worth noting this problem has been discussed a couple times by the current node Project Manager isaacs on the NodeUp* podcast, though I&amp;rsquo;m not exactly sure which. Apparently they&amp;rsquo;re working a new version of npm website right now.</description>
+      <description>
+        
+          &lt;p&gt;Last night we had a great second Node.js Toronto meetup. There was some frustration directed towards the problem knowing which modules are of high quality. This is an acknowledged pain point in the node.js community but it&amp;rsquo;ll get better soon.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s worth noting this problem has been discussed a couple times by the current node Project Manager &lt;a href=&#34;https://github.com/isaacs&#34;&gt;isaacs&lt;/a&gt; on the &lt;a href=&#34;http:///nodeup.com&#34;&gt;NodeUp&lt;/a&gt;* podcast, though I&amp;rsquo;m not exactly sure which. Apparently they&amp;rsquo;re working a new version of &lt;a href=&#34;http://npmjs.org&#34;&gt;npm&lt;/a&gt; website right now.&lt;/p&gt;
+&lt;p&gt;In the meantime, finding quality node modules isn&amp;rsquo;t all that hard. With a bit of experience you&amp;rsquo;ll start to recognize names and learn to judge module quality quite quickly. Here&amp;rsquo;s some tips:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the following gives you the most depended on modules &lt;a href=&#34;http://search.npmjs.org/#/_browse/deps&#34;&gt;http://search.npmjs.org/#/_browse/deps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;take a look at this list first&lt;/li&gt;
+&lt;li&gt;take note of the names of these authors&lt;/li&gt;
+&lt;li&gt;you&amp;rsquo;ll notice certain people or organizations publish a lot (substack and NodeJitsu for instance )&lt;/li&gt;
+&lt;li&gt;also take a look at the modules wiki at &lt;a href=&#34;https://github.com/joyent/node/wiki/modules&#34;&gt;https://github.com/joyent/node/wiki/modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;otherwise search &lt;a href=&#34;http://search.npmjs.org/&#34;&gt;http://search.npmjs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;visit the github page for the module, it&amp;rsquo;s usually next to the name&lt;/li&gt;
+&lt;li&gt;there&amp;rsquo;s no real excuse not to have a github page (or google code I supposed), I avoid these modules&lt;/li&gt;
+&lt;li&gt;look for a clean well written README&lt;/li&gt;
+&lt;li&gt;if someone really wants you to use their module they&amp;rsquo;ll make it easy to do so with a synopsis/quick start/tutorial&lt;/li&gt;
+&lt;li&gt;does the module have watchers?&lt;/li&gt;
+&lt;li&gt;tests?&lt;/li&gt;
+&lt;li&gt;how does the code look?&lt;/li&gt;
+&lt;li&gt;are there alternatives?&lt;/li&gt;
+&lt;li&gt;how hard is to write your own?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;* The NodeUp podcast is great. I highly recommend it.&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -140,10 +279,15 @@ It&amp;rsquo;s worth noting this problem has been discussed a couple times by th
       <pubDate>Sun, 18 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2012-03-18-disqus-on-github/</guid>
-      <description>I had some trouble getting disqus to work with my github page. Turns out I needed to add the following to my disqus javascript:
- var disqus_url = &#39;http://gflarity.github.com{{ page.url }}&#39;; 
-Now it all works like a charm.
-Thanks to http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/.</description>
+      <description>
+        
+          &lt;p&gt;I had some trouble getting disqus to work with my github page. Turns out I needed to add the following to my disqus javascript:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;var disqus_url = &#39;http://gflarity.github.com{{ page.url }}&#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now it all works like a charm.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/&#34;&gt;http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/&lt;/a&gt;.&lt;/p&gt;
+
+        
+      </description>
     </item>
     
     <item>
@@ -152,16 +296,12 @@ Thanks to http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/.</d
       <pubDate>Wed, 07 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.example.com/posts/2012-03-07-helloworld/</guid>
-      <description>Hello World!</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>http://www.example.com/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.example.com/search/</guid>
-      <description></description>
+      <description>
+        
+          &lt;p&gt;Hello World!&lt;/p&gt;
+
+        
+      </description>
     </item>
     
   </channel>
