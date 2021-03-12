@@ -1,6 +1,5 @@
-.rvmrc
-node_modules/
-.deploy_git/
-public/
-db.json
-\#*
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
