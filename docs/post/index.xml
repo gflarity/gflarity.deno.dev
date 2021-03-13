@@ -6,338 +6,424 @@
     <description>Recent content in Posts on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2021, Geoffrey Flarity</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gflarity.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jul 2018 22:04:53 -0400</lastBuildDate><atom:link href="https://gflarity.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://gflarity.github.io/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>2018 07 16 Minikube</title>
+      <link>https://gflarity.github.io/post/2018-07-16-minikube/</link>
+      <pubDate>Mon, 16 Jul 2018 22:04:53 -0400</pubDate>
       
-      <guid>https://gflarity.github.io/post/markdown-syntax/</guid>
+      <guid>https://gflarity.github.io/post/2018-07-16-minikube/</guid>
       <description>
         
-          &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
-&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
-&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
-&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
-&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
-&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
-&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
-&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
-&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
-&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
-&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Don&#39;t communicate by sharing memory, share memory by communicating.&lt;br&gt;
-— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
-&lt;p&gt;Tables aren&#39;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Bob&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Alice&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Italics&lt;/th&gt;
-&lt;th&gt;Bold&lt;/th&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
-&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;&amp;lt;!-- this line is extraneous 2Error from server (Forbidden): deployments.apps is forbidden: User &amp;#34;chiptest&amp;#34; cannot create resource &amp;#34;deployments&amp;#34; in API group &amp;#34;apps&amp;#34; in the namespace &amp;#34;default&amp;#34; --&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+          &lt;p&gt;During the process of preparing for a another vidcast/vlog, it occurred to me that I was taking installing Minikube a bit for granted. It&#39;s super easy of course, but that isn&#39;t immediately obvious nor is how valuable Minikube is. So I did a quick vidcast in order to both practice and make sure this info was out there. Enjoy:&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/4GrPHC8EXcM&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;installing-virtualbox&#34;&gt;Installing VirtualBox&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Linux_Downloads&#34;&gt;Virtualbox Download page&lt;/a&gt;. I went with the Ubuntu 18.04 .deb file which I just clicked on.&lt;/p&gt;
+&lt;h2 id=&#34;installing-kubectl&#34;&gt;Installing Kubectl&lt;/h2&gt;
+&lt;h3 id=&#34;os-x&#34;&gt;OS X&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;curl -LO https://storage.googleapis.com/kubernetes-release/release/&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;/bin/darwin/amd64/kubectl
+&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;chmod +x ./kubectl
+&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;sudo mv ./kubectl /usr/local/bin/kubectl
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;curl -LO https://storage.googleapis.com/kubernetes-release/release/&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;/bin/linux/amd64/kubectl
+&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;chmod +x ./kubectl
+&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;sudo mv ./kubectl /usr/local/bin/kubectl
+&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;installing-minikube&#34;&gt;Installing Minikube&lt;/h2&gt;
+&lt;h3 id=&#34;os-x-1&#34;&gt;OS X&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-darwin-amd64 &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x minikube &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mv minikube /usr/local/bin/
+&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;minikube start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;linux-1&#34;&gt;Linux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;curl -Lo minikube https://storage.googleapis.com/minikube/releases/v0.28.1/minikube-linux-amd64 &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x minikube &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mv minikube /usr/local/bin/
+&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;minikube start
+&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>2018 07 14 Blogging Again</title>
+      <link>https://gflarity.github.io/post/2018-07-14-blogging-again/</link>
+      <pubDate>Sat, 14 Jul 2018 22:13:36 -0400</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2018-07-14-blogging-again/</guid>
+      <description>
+        
+          &lt;h4 id=&#34;blogging-again&#34;&gt;Blogging again!?&lt;/h4&gt;
+&lt;p&gt;This just a quick note where I pretend someone else is actually reading this. I&#39;m back to blogging again. Sort of... I&#39;m going to try my hand at making in depth technology related explorations. In the process of making these videos I&#39;m going to inevitably create talking notes. I&#39;m planning to polish these notes into blog posts that accompany the video.  At least this is the current plan.&lt;/p&gt;
+&lt;h4 id=&#34;why&#34;&gt;Why?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Online videos/youtube is are a huge leap in terms of educational advancement. I&#39;d like to be a small art of that.&lt;/li&gt;
+&lt;li&gt;I agonize over the written form in a way I just don&#39;t with video. At least presently. I&#39;m hoping to not let perfect be the enemy of the good.&lt;/li&gt;
+&lt;li&gt;There&#39;s a lot of different topics I&#39;d like to explore and share.&lt;/li&gt;
+&lt;/ol&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Atom &#43; Hexo &#43; GitHub pages make a good blogging platform for nerds</title>
+      <link>https://gflarity.github.io/post/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</link>
+      <pubDate>Sun, 28 Feb 2016 14:43:07 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2016-02-28-atom-hexo-github-pages-make-a-good-blogging-platform-for-nerds/</guid>
+      <description>
+        
+          &lt;p&gt;There are lots of blogging platforms out there. But I want to use markdown with git. So this is how I do it.&lt;/p&gt;
+&lt;p&gt;See my older post on &lt;a href=&#34;https://gflarity.github.io/2016/02/27/Atom-editor-is-worth-watching/&#34;&gt;Atom here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go install &lt;a href=&#34;http://hexo.io&#34;&gt;Hexo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Install the &lt;a href=&#34;https://atom.io/packages/atom-hexo&#34;&gt;atom-hexo&lt;/a&gt; for Atom.&lt;/p&gt;
+&lt;p&gt;Install the &lt;a href=&#34;https://atom.io/packages/git-plus&#34;&gt;git-plus&lt;/a&gt; form Atom.&lt;/p&gt;
+&lt;p&gt;Setup your &lt;a href=&#34;https://pages.github.com&#34;&gt;GitHub Page&lt;/a&gt; repo.&lt;/p&gt;
+&lt;p&gt;Configure Hexo to &lt;a href=&#34;https://jdpaton.github.io/2012/11/05/setup-hexo/&#34;&gt;deploy with git&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can create new post, commit it, and deploy by using package commands now.&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Atom editor is worth checking out</title>
+      <link>https://gflarity.github.io/post/2016-02-27-atom-editor-is-worth-watching/</link>
+      <pubDate>Sat, 27 Feb 2016 21:02:45 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2016-02-27-atom-editor-is-worth-watching/</guid>
+      <description>
+        
+          &lt;p&gt;As I write this entry in markdown, I see the live results a separate pane to the right. It&#39;s only been a few minutes but so far I&#39;m very impressed with &lt;a href=&#34;http://atom.io&#34;&gt;Atom&lt;/a&gt;. You should go check it out if you haven&#39;t already. Here&#39;s what I like so far.&lt;/p&gt;
+&lt;h3 id=&#34;dont-call-them-plugins-theyre-packages&#34;&gt;Don&#39;t call them plugins, they&#39;re &#39;packages&#39;&lt;/h3&gt;
+&lt;p&gt;Shrug. Whatever you call them, their plugin/package system is great. It&#39;s easy to install packages and the ones I&#39;ve installed start working immediately without restart. Smells like there&#39;s some good design under the hood.&lt;/p&gt;
+&lt;h3 id=&#34;command-interface-autocomplete&#34;&gt;Command Interface Autocomplete&lt;/h3&gt;
+&lt;p&gt;Packages can provide various &#39;commands&#39; you can run. Running these commands is like spot line on OS X. You type command + shift + P, then as you start typing it searches the commands. Very nice.&lt;/p&gt;
+&lt;h3 id=&#34;git-integration-with-git-plus&#34;&gt;Git integration with git-plus&lt;/h3&gt;
+&lt;p&gt;In particular the git integration seems interesting. When you edit a file, it indicates which lines have changed, and which are new. With the git-plus package installed it&#39;s easy to run git commands without ever leaving your editor. Normally I&#39;m not a big fan of IDE intgration with git. With the command searching interface, it&#39;s fun.&lt;/p&gt;
+&lt;h3 id=&#34;its-built-with-electron&#34;&gt;It&#39;s built with Electron&lt;/h3&gt;
+&lt;p&gt;It&#39;s built with &lt;a href=&#34;http://http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; which is also terrific as well. I think that&#39;s separate post. But you should check it out if you want to build desktop apps using node.js + HTML5.&lt;/p&gt;
+&lt;h3 id=&#34;its-floss&#34;&gt;It&#39;s FLOSS!&lt;/h3&gt;
+&lt;p&gt;It&#39;s &lt;a href=&#34;https://en.wikipedia.org/wiki/Free_and_open-source_software&#34;&gt;FLOSS&lt;/a&gt;. Turns out it&#39;s made by GitHub. Lots of great FLOSS coming out of GitHub. Thanks!&lt;/p&gt;
+&lt;p&gt;Update (2016-02-28):  The goto declaration ability of WebStorm is FAR superior
+to any Atom packages I&#39;ve tried. This is the only thing keeping me from using Atom
+as my daily driver for development.&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Buh-bye Jekyll, Hello Hexo</title>
+      <link>https://gflarity.github.io/post/2016-02-27-buh-bye-jekyll-hello-hexo/</link>
+      <pubDate>Sat, 27 Feb 2016 16:38:31 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2016-02-27-buh-bye-jekyll-hello-hexo/</guid>
+      <description>
+        
+          &lt;h3 id=&#34;buh-bye-jekyll&#34;&gt;Buh-bye Jekyll&lt;/h3&gt;
+&lt;p&gt;I tried to get Jekyll working again after 3 years on inactivity. It was painful enough that I said eff it.  My tolerance for Ruby related pain is extremely low these days.&lt;/p&gt;
+&lt;h3 id=&#34;hello-hexo&#34;&gt;Hello Hexo&lt;/h3&gt;
+&lt;p&gt;Since we use a lot of Node.js at Kash, I decided to switch to Hexo. It seems to be a polished Jekyll clone. Really the most important thing for me to keep my actual content in markdown. I expect to move again, and markdown does the job.&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Blogging again</title>
+      <link>https://gflarity.github.io/post/2016-02-27-blogging-again/</link>
+      <pubDate>Sat, 27 Feb 2016 16:29:48 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2016-02-27-blogging-again/</guid>
+      <description>
+        
+          &lt;p&gt;While &lt;a href=&#34;http://withkash.com&#34;&gt;Kash&lt;/a&gt; is keeping me insanely busy, I to start blogging again. I&#39;m going to try to write once a week but keep it very MVBP (Minimum Viable Blog Post) ;)&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Secure Replication With Postgres 9.1</title>
+      <link>https://gflarity.github.io/post/2013-02-14-secure-postgres-replication/</link>
+      <pubDate>Thu, 14 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2013-02-14-secure-postgres-replication/</guid>
+      <description>
+        
+          &lt;p&gt;Having been the MySQL DBA-By-Default (DBA-B-D) in another life, I&#39;ve must to admit to being much happier with postgres despite what I consider to be documentation holes. As a DBA-B-D (aka DevOps, aka Co-Founder), I find postgres lacking concise up-to-date documentation for getting specific tasks done quickly,  or howtos. Replication is one such task. I had to merge bits and pieces from a number of sources, including mailing list posts,  together in order to get what I wanted. I&#39;m not complaining though, rather this my contribution to improving this situation.&lt;/p&gt;
+&lt;h1 id=&#34;why-secure-replication&#34;&gt;Why Secure Replication&lt;/h1&gt;
+&lt;p&gt;The Cloud, aka outsourced VPS hosting with an API. Most of the documentation seems to expect you to be running this in our private secure network partitioned data center.&lt;/p&gt;
+&lt;h1 id=&#34;high-level-overview&#34;&gt;High Level Overview&lt;/h1&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h1 id=&#34;get-yourself-a-cert&#34;&gt;Get Yourself A Cert&lt;/h1&gt;
+&lt;p&gt;You&#39;ll probably want to generate one yourself. THere&#39;s not much point paying for a new one since you can easily distribute your own CA cert. Google it, there&#39;s lot of info out there.&lt;/p&gt;
+&lt;h1 id=&#34;on-the-master&#34;&gt;On The Master&lt;/h1&gt;
+&lt;p&gt;Update the postgres.conf on your master to enable WAL support for replication:&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+wal_level = hot_standby
+max_wal_senders = 3
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Add the following to authorize the client to replicate against the db. Note that we&#39;re only authorizing an SSL connection from replication user on all databases from $SLAVE_IP with password based authentication (md5).&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+hostssl replication all $SLAVE_IP/32    md5
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Note: You&#39;ll need to restart your postgres server for the wal related setting to take affect now.&lt;/p&gt;
+&lt;p&gt;The Postgres data dir for Ubuntu 12-04 is in /var/lib/postgresql/9.1/main&lt;/p&gt;
+&lt;p&gt;You&#39;ll need an SSL key and cert and root cert (CA). You can generate your own CA and self signed cert if you want as well. To do so see the Keys and Certs section of
+&lt;a href=&#34;http://gflarity.github.com/2012/07/25/client-ssl-auth/&#34;&gt;this article&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;on-the-slave&#34;&gt;On The Slave&lt;/h1&gt;
+&lt;p&gt;If postgres is running on the SLAVE, bring it down. You&#39;re going to wipe out whatever is there and create a backup from the master.&lt;/p&gt;
+&lt;p&gt;Switch to postgres user from here on.&lt;/p&gt;
+&lt;p&gt;First, delete the the contents of $PG_DATA ( /var/lib/postgresql/9.1/main/ on Ubuntu/Debian ).&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+sudo su - postgres
+rm -rf /var/lib/postgresql/9.1/main/
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Now use pg_basebackup to create the backup we&#39;re going to start replicaiton from. You&#39;ll be prompted for the postgres user password ($PG_PASS).&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+pg_basebackup -D /var/lib/postgresql/9.1/main/ -x -h $MASTER_IP
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;As &lt;em&gt;root&lt;/em&gt;, create links to the certs, including your CA/root cert.&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+sudo su
+cd /var/lib/postgresql/9.1/main/
+ln -s /etc/ssl/certs/yourcert.crt server.crt
+ln -s /etc/ssl/private/yourkey.key server.key
+ln -s /etc/ssl/certs/root.crt root.cert
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Once complete, create a file called recovery.conf with the following contents inside your postgres data dir on the slave.&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+standby_mode = &#39;on&#39;
+# &#39;touch&#39; the file below to initiate fail over ( break replication, become read-write )
+trigger_file = &#39;$PG_DATA/failover&#39;
+primary_conninfo=&#39;host=$MASTER_IP port=5432 sslmode=verify-ca password=$PG_PASS&#39;
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Add the followng to the postgres.conf file:&lt;/p&gt;
+&lt;p/&gt;
+&lt;pre&gt;
+hot_standby = on
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Link to the root cert used to verify the master:&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+ln -s /etc/ssl/
+&lt;/pre&gt;
+&lt;/p&gt;
+&lt;p&gt;Start postgres and tail the log, you should see replication starting. On Ubuntu:&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+service postgres start
+tail -f /var/log/postgresql/postgresql-9.1-main.log
+&lt;/pre&gt;
+&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>SSH Agent Forwarding</title>
+      <link>https://gflarity.github.io/post/2012-12-28-ssh-agent-forwarding/</link>
+      <pubDate>Fri, 28 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2012-12-28-ssh-agent-forwarding/</guid>
+      <description>
+        
+          &lt;p&gt;I was having some issues getting my SSH Agent to forward. Turns out my understanding was completely inadequate. Here&#39;s a quick run through for anyone else who might benefit.&lt;/p&gt;
+&lt;h1 id=&#34;high-level-concept&#34;&gt;High Level Concept&lt;/h1&gt;
+&lt;p&gt;Say you have hosts A B C and you want to connect like so: A-&amp;gt;B-&amp;gt;C. SSH allows you forward your &#39;Agent&#39; such that your credentials for host A can be used on on host C as if B wasn&#39;t even involved. It does so by forwarding a unix domain socket provided by A&#39;s agent to B (usually in /tmp/ssh-??) when you connect from A-&amp;gt;B. Then when you connect B-&amp;gt;C instead of C interacting with B&#39;s agent, it interacts with the forwarded Agent provided by A.&lt;/p&gt;
+&lt;h1 id=&#34;configuration&#34;&gt;Configuration&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure &#39;AllowAgentForwarding no&#39; is &lt;em&gt;not&lt;/em&gt; set it in /etc/ssh/sshd_config on B (it defaults to yes if it&#39;s not explicitly set to no).&lt;/li&gt;
+&lt;li&gt;Make sure your client config has &#39;ForwardAgent yes&#39;, you&#39;ll likely want to do this which specific hosts you trust/control, as a program on B will able to login as you (only while you&#39;re connected) if it wants. Edit ~/.ssh/config and add something similar to the following:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;
+Host examplehost.com
+  ForwardAgent yes
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+   - Tell your ssh-agent on A that you want make an identity available through it. Run the follow from a terminal:
+&lt;pre&gt;
+ssh-add
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+That&#39;s it. You should be able to login to C from B using your credentials securely stored on A. 
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Client SSL Auth</title>
+      <link>https://gflarity.github.io/post/2012-07-25-client-ssl-auth/</link>
+      <pubDate>Wed, 25 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2012-07-25-client-ssl-auth/</guid>
+      <description>
+        
+          &lt;p&gt;The HTTPS system allows you to communicate securely with a server and trust it&#39;s idenity. This is how it&#39;s generally used. However it&#39;s also possible for the server to trust the identity of the client as well.&lt;/p&gt;
+&lt;p&gt;It&#39;s fairly straight forward to take advantage of this with Node.js, below you will find a simple tutorial for doing just that.&lt;/p&gt;
+&lt;h1 id=&#34;keys-and-certs&#34;&gt;Keys and Certs&lt;/h1&gt;
+&lt;p&gt;First, you&#39;re going to need all your certs and keys. Follow along with the instructions below to do so. It&#39;s adapted from &lt;a href=&#34;http://blog.nategood.com/client-side-certificate-authentication-in-ngi&#34;&gt;this&lt;/a&gt; article.&lt;/p&gt;
+&lt;p&gt;Notice the &#39;365&#39;. If you want your keys to valide for longer than a year, change this.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+# Create the CA Key and Certificate for signing Client Certs
+openssl genrsa -des3 -out ca.key 4096
+openssl req -new -x509 -days 365 -key ca.key -out ca.crt
+
+# Create the Server Key, CSR (the signing request the CA is given)
+openssl genrsa -des3 -out server.key 1024
+openssl req -new -key server.key -out server.csr
+
+# You likely want a server key without a passphrase (put the passphrase protected one in your private git repo)
+openssl rsa -in server.key -out server.key.pem 
+
+# We&#39;re self signing our own server cert here.  This is a no-no in production.
+openssl x509 -req -days 365 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt
+
+# Create the Client Key and CSR
+openssl genrsa -des3 -out client.key 1024
+openssl req -new -key client.key -out client.csr
+
+# You likely want a client key without a passphrase for deployment (put the passphrase protected one in your private git repo)
+openssl rsa -in client.key -out client.key.pem 
+
+# Sign the client certificate with our CA cert.  Unlike signing our own server cert, this is what we want to do.
+openssl x509 -req -days 365 -in client.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out client.crt`
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&#39;s internal highlight shortcode&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
-&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Second item&lt;/li&gt;
-&lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;List item&lt;/li&gt;
-&lt;li&gt;Another item&lt;/li&gt;
-&lt;li&gt;And another item&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Fruit
-&lt;ul&gt;
-&lt;li&gt;Apple&lt;/li&gt;
-&lt;li&gt;Orange&lt;/li&gt;
-&lt;li&gt;Banana&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Dairy
-&lt;ul&gt;
-&lt;li&gt;Milk&lt;/li&gt;
-&lt;li&gt;Cheese&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
-&lt;p&gt;&lt;abbr title=&#34;Graphics Interchange Format&#34;&gt;GIF&lt;/abbr&gt; is a bitmap image format.&lt;/p&gt;
-&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
-&lt;p&gt;X&lt;sup&gt;n&lt;/sup&gt; + Y&lt;sup&gt;n&lt;/sup&gt; = Z&lt;sup&gt;n&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;Press &lt;kbd&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;ALT&lt;/kbd&gt;+&lt;kbd&gt;Delete&lt;/kbd&gt;&lt;/kbd&gt; to end the session.&lt;/p&gt;
-&lt;p&gt;Most &lt;mark&gt;salamanders&lt;/mark&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The above quote is excerpted from Rob Pike&#39;s &lt;a href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;&gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h1 id=&#34;server&#34;&gt;Server:&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;
+var https = require(&#39;https&#39;);
+var fs = require(&#39;fs&#39;);
+
+var options = {
+    key: fs.readFileSync(&#39;server.key.pem&#39;),
+    cert: fs.readFileSync(&#39;server.crt&#39;),
+
+    //for client certs, this validates the client                                                                                                                                                           
+    ca : [ fs.readFileSync(&#39;ca.crt&#39;) ],
+    requestCert : true,
+    rejectUnauthorized: true
+};
+
+https.createServer(options, function (req, res) {
+    res.writeHead(200);
+    res.end(&#34;hello world\n&#34;);
+}).listen(4443);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;
+# Client:
+&lt;pre&gt;&lt;code&gt;
+var https = require(&#39;https&#39;);
+var fs = require(&#39;fs&#39;);
+
+var options = {
+    host: &#39;localhost&#39;,
+    port: 4443,
+    path: &#39;/&#39;,
+    method: &#39;GET&#39;,
+    key: fs.readFileSync(&#39;client.key.pem&#39;),
+    cert: fs.readFileSync(&#39;client.crt&#39;),
+    ca : [ fs.readFileSync(&#39;ca.crt&#39;) ],
+    requestCert : true,
+    rejectUnauthorized: true
+};
+options.agent = new https.Agent(options);
+
+var req = https.request(options, function(res) {
+
+    console.log(&#39;STATUS: &#39; + res.statusCode);
+    console.log(&#39;HEADERS: &#39; + JSON.stringify(res.headers));
+    res.setEncoding(&#39;utf8&#39;);
+    res.on(&#39;data&#39;, function (chunk) {
+        console.log(&#39;BODY: &#39; + chunk);
+    });
+} );
+
+req.end();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;P&gt;
+
         
       </description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://gflarity.github.io/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Finding Quality Node Modules</title>
+      <link>https://gflarity.github.io/post/2012-04-05-finding-node-modules/</link>
+      <pubDate>Thu, 05 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://gflarity.github.io/post/rich-content/</guid>
+      <guid>https://gflarity.github.io/post/2012-04-05-finding-node-modules/</guid>
       <description>
         
-          &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;instagram-simple-shortcode&#34;&gt;Instagram Simple Shortcode&lt;/h2&gt;
-&lt;br&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;br&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
-
-
-
-
-&lt;style type=&#34;text/css&#34;&gt;
-  .twitter-tweet {
-  font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif;
-  border-left: 4px solid #2b7bb9;
-  padding-left: 1.5em;
-  color: #555;
-}
-  .twitter-tweet a {
-  color: #2b7bb9;
-  text-decoration: none;
-}
-  blockquote.twitter-tweet a:hover,
-  blockquote.twitter-tweet a:focus {
-  text-decoration: underline;
-}
-&lt;/style&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;br&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
-
-
-
-
-
-
-&lt;style&gt;
-.__h_video {
-   position: relative;
-   padding-bottom: 56.23%;
-   height: 0;
-   overflow: hidden;
-   width: 100%;
-   background: #000;
-}
-.__h_video img {
-   width: 100%;
-   height: auto;
-   color: #000;
-}
-.__h_video .play {
-   height: 72px;
-   width: 72px;
-   left: 50%;
-   top: 50%;
-   margin-left: -36px;
-   margin-top: -36px;
-   position: absolute;
-   cursor: pointer;
-}
-&lt;/style&gt;
-
-
-&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
-&lt;a href=&#34;https://vimeo.com/4.8912912e&amp;#43;07&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
-
-
-&lt;img src=&#34;https://i.vimeocdn.com/video/337401969_640.jpg&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969_640.jpg 1x, https://i.vimeocdn.com/video/337401969.jpg 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
-&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://gflarity.github.io/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gflarity.github.io/post/placeholder-text/</guid>
-      <description>
-        
-          &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
-&lt;li&gt;Duce pollice&lt;/li&gt;
-&lt;li&gt;Eris modo&lt;/li&gt;
-&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
-&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
-&lt;li&gt;Flumen querellas&lt;/li&gt;
-&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
-&lt;li&gt;Quidem et&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt&lt;/h1&gt;
-&lt;p&gt;&lt;svg class=&#34;canon&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; overflow=&#34;visible&#34; viewBox=&#34;0 0 496 373&#34; height=&#34;373&#34; width=&#34;496&#34;&gt;&lt;g fill=&#34;none&#34;&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#ED1C24&#34; stroke-width=&#34;.75&#34; d=&#34;M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z&#34;&gt;&lt;/path&gt;&lt;path stroke=&#34;#000&#34; stroke-width=&#34;.75&#34; d=&#34;M.479.375h495v372h-495zM247.979.875v372&#34;&gt;&lt;/path&gt;&lt;ellipse cx=&#34;498.729&#34; cy=&#34;177.625&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;ellipse cx=&#34;247.229&#34; cy=&#34;377.375&#34; rx=&#34;.75&#34; ry=&#34;1.25&#34;&gt;&lt;/ellipse&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;&gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat&lt;/h2&gt;
-&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
-&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
-&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://gflarity.github.io/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://gflarity.github.io/post/math-typesetting/</guid>
-      <description>
-        
-          &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-&lt;p&gt;In this example we will be using &lt;a href=&#34;https://katex.org/&#34;&gt;KaTeX&lt;/a&gt;&lt;/p&gt;
+          &lt;p&gt;Last night we had a great second Node.js Toronto meetup. There was some frustration directed towards the problem knowing which modules are of high quality. This is an acknowledged pain point in the node.js community but it&#39;ll get better soon.&lt;/p&gt;
+&lt;p&gt;It&#39;s worth noting this problem has been discussed a couple times by the current node Project Manager &lt;a href=&#34;https://github.com/isaacs&#34;&gt;isaacs&lt;/a&gt; on the &lt;a href=&#34;http:///nodeup.com&#34;&gt;NodeUp&lt;/a&gt;* podcast, though I&#39;m not exactly sure which. Apparently they&#39;re working a new version of &lt;a href=&#34;http://npmjs.org&#34;&gt;npm&lt;/a&gt; website right now.&lt;/p&gt;
+&lt;p&gt;In the meantime, finding quality node modules isn&#39;t all that hard. With a bit of experience you&#39;ll start to recognize names and learn to judge module quality quite quickly. Here&#39;s some tips:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Within this partial reference the &lt;a href=&#34;https://katex.org/docs/autorender.html&#34;&gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
-&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
+&lt;li&gt;the following gives you the most depended on modules &lt;a href=&#34;http://search.npmjs.org/#/_browse/deps&#34;&gt;http://search.npmjs.org/#/_browse/deps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;take a look at this list first&lt;/li&gt;
+&lt;li&gt;take note of the names of these authors&lt;/li&gt;
+&lt;li&gt;you&#39;ll notice certain people or organizations publish a lot (substack and NodeJitsu for instance )&lt;/li&gt;
+&lt;li&gt;also take a look at the modules wiki at &lt;a href=&#34;https://github.com/joyent/node/wiki/modules&#34;&gt;https://github.com/joyent/node/wiki/modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;otherwise search &lt;a href=&#34;http://search.npmjs.org/&#34;&gt;http://search.npmjs.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;visit the github page for the module, it&#39;s usually next to the name&lt;/li&gt;
+&lt;li&gt;there&#39;s no real excuse not to have a github page (or google code I supposed), I avoid these modules&lt;/li&gt;
+&lt;li&gt;look for a clean well written README&lt;/li&gt;
+&lt;li&gt;if someone really wants you to use their module they&#39;ll make it easy to do so with a synopsis/quick start/tutorial&lt;/li&gt;
+&lt;li&gt;does the module have watchers?&lt;/li&gt;
+&lt;li&gt;tests?&lt;/li&gt;
+&lt;li&gt;how does the code look?&lt;/li&gt;
+&lt;li&gt;are there alternatives?&lt;/li&gt;
+&lt;li&gt;how hard is to write your own?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&#39;s configuration&lt;/li&gt;
-&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a href=&#34;https://katex.org/docs/supported.html&#34;&gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;* The NodeUp podcast is great. I highly recommend it.&lt;/p&gt;
 
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p&gt;
         
       </description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://gflarity.github.io/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Disqus On Github</title>
+      <link>https://gflarity.github.io/post/2012-03-18-disqus-on-github/</link>
+      <pubDate>Sun, 18 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://gflarity.github.io/post/emoji-support/</guid>
+      <guid>https://gflarity.github.io/post/2012-03-18-disqus-on-github/</guid>
       <description>
         
-          &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://gohugo.io/functions/emojify/&#34;&gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;&gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&#39;s &lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34;&gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙈&lt;/span&gt; &lt;code&gt;:see_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙉&lt;/span&gt; &lt;code&gt;:hear_no_evil:&lt;/code&gt;&lt;/span&gt;  &lt;span class=&#34;nowrap&#34;&gt;&lt;span class=&#34;emojify&#34;&gt;🙊&lt;/span&gt; &lt;code&gt;:speak_no_evil:&lt;/code&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;p&gt;The &lt;a href=&#34;http://www.emoji-cheat-sheet.com/&#34;&gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;.emoji {
-&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+          &lt;p&gt;I had some trouble getting disqus to work with my github page. Turns out I needed to add the following to my disqus javascript:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;var disqus_url = &#39;http://gflarity.github.com{{ page.url }}&#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now it all works like a charm.&lt;/p&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/&#34;&gt;http://davidwinter.me/articles/2011/10/29/setting-up-github-pages/&lt;/a&gt;.&lt;/p&gt;
+
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://gflarity.github.io/post/2012-03-07-helloworld/</link>
+      <pubDate>Wed, 07 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://gflarity.github.io/post/2012-03-07-helloworld/</guid>
+      <description>
+        
+          &lt;p&gt;Hello World!&lt;/p&gt;
+
         
       </description>
     </item>
