@@ -1,24 +1,14 @@
 # Built With
-`hugo v0.81.0+extended`
+https://deno.land/x/blog
 
 # Quick Start
 ```sh
-cd src
-hugo -d ../docs
-# commit and push
+# start up the development server
+deno task start
 ```
-
 # Adding New Post
 ```sh
-cd src
-hugo new post/<name>.md
-# set draft: false to actually publish
+DATE=`date +%Y-%m-%d`
+TITLE="Your Title"
+echo -e "---\npublish_date: $DATE\ntitle: $TITLE\n---\n" >> ./posts/${DATE}_${TITLE// /-}.md
 ```
-
-# Notes
-* I've symlinked ./posts ./src/content/post so that it's easy to change the theme, or every use something different later.
-* ./src is used to generate the site
-* static files go in ./docs and github is setup to use that dir
-
-
-

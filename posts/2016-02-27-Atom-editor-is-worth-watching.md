@@ -1,6 +1,6 @@
 ---
 title: Atom editor is worth checking out
-date: 2016-02-27 21:02:45
+publish_date: 2016-02-27 21:02:45
 tags:
 ---
 

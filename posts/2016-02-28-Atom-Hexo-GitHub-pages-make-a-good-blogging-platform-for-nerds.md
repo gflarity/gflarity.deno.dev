@@ -1,6 +1,6 @@
 ---
 title: Atom + Hexo + GitHub pages make a good blogging platform for nerds
-date: 2016-02-28 14:43:07
+publish_date: 2016-02-28 14:43:07
 tags:
 ---
 

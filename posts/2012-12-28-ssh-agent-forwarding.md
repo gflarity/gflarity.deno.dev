@@ -1,5 +1,5 @@
 ---
-date: 2012-12-28
+publish_date: 2012-12-28
 layout: post
 title: SSH Agent Forwarding
 categories:
