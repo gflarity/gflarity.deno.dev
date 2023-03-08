@@ -1,5 +1,5 @@
 ---
-date: 2012-03-07
+publish_date: 2012-03-07
 layout: post
 title: Hello World!
 categories:

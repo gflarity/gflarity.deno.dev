@@ -1,5 +1,5 @@
 ---
-date: 2013-02-14
+publish_date: 2013-02-14
 layout: post
 title: Secure Replication With Postgres 9.1
 categories:

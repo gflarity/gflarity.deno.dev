@@ -1,6 +1,6 @@
 ---
 title: "2018 07 14 Blogging Again"
-date: 2018-07-14T22:13:36-04:00
+publish_date: 2018-07-14T22:13:36-04:00
 draft: false
 ---
 

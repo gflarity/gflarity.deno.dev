@@ -1,6 +1,6 @@
 ---
 title: 'Buh-bye Jekyll, Hello Hexo'
-date: 2016-02-27 16:38:31
+publish_date: 2016-02-27 16:38:31
 tags:
 ---
 

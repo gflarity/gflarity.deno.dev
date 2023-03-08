@@ -1,5 +1,5 @@
 ---
-date: 2012-04-05
+publish_date: 2012-04-05
 layout: post
 title: Finding Quality Node Modules
 categories:

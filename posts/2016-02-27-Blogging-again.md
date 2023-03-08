@@ -1,6 +1,6 @@
 ---
 title: Blogging again
-date: 2016-02-27 16:29:48
+publish_date: 2016-02-27 16:29:48
 tags:
 ---
 

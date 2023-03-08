@@ -1,5 +1,5 @@
 ---
-date: 2012-07-25
+publish_date: 2012-07-25
 layout: post
 title: Client SSL Auth
 categories:

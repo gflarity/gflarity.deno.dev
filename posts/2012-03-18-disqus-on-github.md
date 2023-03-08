@@ -1,5 +1,5 @@
 ---
-date: 2012-03-18
+publish_date: 2012-03-18
 layout: post
 title: Disqus On Github
 categories:
