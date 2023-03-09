@@ -4,7 +4,7 @@ https://deno.land/x/blog
 # Quick Start
 ```sh
 # start up the development server
-deno task start
+deno task dev
 ```
 # Adding New Post
 ```sh
