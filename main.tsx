@@ -1,6 +1,7 @@
 /** @jsx h */
 
 import blog, { ga, redirects, h } from "blog";
+import { Buffer } from "https://deno.land/std@0.134.0/io/buffer";
 
 blog({
   title: "Geoff's Blog",
@@ -10,7 +11,7 @@ blog({
   // footer: <footer>Your custom footer</footer>,
   avatar: "https://deno-avatar.deno.dev/avatar/blog.svg",
   avatarClass: "rounded-full",
-  author: "An author",
+  author: "Geoff Flarity",
 
   // middlewares: [
 
