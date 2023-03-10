@@ -163,4 +163,4 @@ export async function start(routes: Manifest, opts: StartOptions = {}) {
   const ctx = await ServerContext.fromManifest(routes, opts);
 ```
 
-The Server Context will be the focus on the next part of the series. "Contexts" will be subject of the next post in the series. Stay stuned! If you'd like comment, send feedback, or ask questions, here's the tweet for this post. I'll announce follows on twitter as well.
+The Server Context will be the focus on the next part of the series. "Contexts" will be subject of the next post in the series. Stay stuned! If you'd like comment, send feedback, or ask questions, [here's the tweet for this post](https://twitter.com/gflarity/status/1634325424011464708). I'll announce follows on twitter as well.
