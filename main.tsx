@@ -1,7 +1,7 @@
 /** @jsx h */
 
 import blog, { ga, redirects, h } from "blog";
-import { Buffer } from "https://deno.land/std@0.134.0/io/buffer";
+import { Buffer } from "https://deno.land/std@0.134.0/io/buffer.ts";
 
 blog({
   title: "Geoff's Blog",
