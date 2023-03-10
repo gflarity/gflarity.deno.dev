@@ -2,8 +2,6 @@
 publish_date: 2023-03-10
 title: Deno Fresh Deep Dive - Part I - The Manifest
 ---
-# Deno Fresh Deep Dive - Part I - The Manifest
-
 One of the first things you might find surprising about Fresh, is the file called `fresh.gen.ts`. This file comes part of a fresh (pun intended) project scaffolding. This file contains the 'manifest', it looks like this for a brand new project:
 
 ```TypeScript
