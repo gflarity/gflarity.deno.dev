@@ -148,4 +148,4 @@ It's worth noting that it really does seem to just be organizing things and doin
 
 Once again, while the ServerContext now has handler functions for each route, island etc, the actual rendering of said pieces are passed to the handler as render functions. I'm not sure what the benefits are of splitting out this prep work logically, as opposed to logical grouping/separating the combined handling/render logic for routes, island, static files etc. Regardless, in the next part in this series we'll take a look at how the handlers and rendering logic come together.
 
-If you'd like comment, send feedback, or ask questions, [here's the tweet for this post](). I'll announce future parts on twitter as well.
+If you'd like comment, send feedback, or ask questions, [here's the tweet for this post](https://twitter.com/gflarity/status/1636040225272086529). I'll announce future parts on twitter as well.
