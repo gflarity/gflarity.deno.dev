@@ -3,8 +3,6 @@ publish_date: 2023-07-26
 title: Pulumi Native Provider => TypeScript Consumer
 ---
 
-# Pulumi Native Provider => TypeScript Consumer
-
 In this posting I document:
 
 1. How do create a (very basic) Native Pulumi Provider (go)
