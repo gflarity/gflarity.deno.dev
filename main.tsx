@@ -1,8 +1,9 @@
 /** @jsx h */
 
 import blog, { ga, redirects, h } from "blog";
-import { Buffer } from "https://deno.land/std@0.134.0/io/buffer.ts";
-import "https://esm.sh/prismjs@1.27.0/components/prism-typescript";
+import "https://esm.sh/prismjs@1.29.0/components/prism-typescript";
+import "https://esm.sh/prismjs@1.29.0/components/prism-bash";
+import "https://esm.sh/prismjs@1.29.0/components/prism-go";
 
 blog({
   title: "Geoff's Blog",
