@@ -3,8 +3,6 @@ publish_date: 2024-11-16
 title: Demystifying Nvidia GPU Containers - Part I
 ---
 
-# Demystifying Nvidia GPU Containers - Part I
-
 This blog post is a deep dive into how Nvidia GPU containers work "under the hood" on platforms like Kubernetes and Docker when you request a GPU container. The information presented here is relevant to Kubernetes, Docker, and any other container platform that uses containerd (or CRI-O)
 
 **Disclaimer:** To the best of my knowledge, the information in this post is correct. However, this is a complicated topic with many layers and wrappers. Please feel free to reach out to me on Twitter if you have any suggested corrections, and I'll update this post.
