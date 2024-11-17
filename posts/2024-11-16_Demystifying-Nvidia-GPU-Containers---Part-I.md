@@ -19,7 +19,7 @@ Both Docker and most managed Kubernetes platforms utilize `containerd` to create
 
 ### nvidia-container-runtime
 
-GPU containers are special, instead of calling `runc` directly, `containerd` calls the [Nvidia Container Runtime](https://github.com/NVIDIA/nvidia-container-toolkit/tree/main/cmd/nvidia-container-runtime) instead. The Nvidia Container Runtime is mostly just a pass-through wrapper of `runc`, **except** when the "create" argument is passed to `nvidia-container-runtime` ([source code](https://github.com/NVIDIA/nvidia-container-toolkit/blob/1995925a7df644ead7afb767608841d9a08bcbc4/internal/runtime/runtime_factory.go#L39)). For create operations, the OCI runtime `config.json` ([spec](https://github.com/opencontainers/runtime-spec)) is modified.
+GPU containers are special, instead of calling `runc` directly, `containerd` calls the [nvidia-container-runtime](https://github.com/NVIDIA/nvidia-container-toolkit/tree/main/cmd/nvidia-container-runtime) instead. The Nvidia Container Runtime is mostly just a pass-through wrapper of `runc`, **except** when the "create" argument is passed to `nvidia-container-runtime` ([source code](https://github.com/NVIDIA/nvidia-container-toolkit/blob/1995925a7df644ead7afb767608841d9a08bcbc4/internal/runtime/runtime_factory.go#L39)). For create operations, the OCI runtime `config.json` ([spec](https://github.com/opencontainers/runtime-spec)) is modified.
 
 There's a lot of old code and pathways for backward compatibility in the `nvidia-container-runtime`, but on the modern hardware I've played with, the wrapper always seems to default to "legacy" mode. In legacy mode, the `config.json` seems to be modified in two main ways:
 
