@@ -3,6 +3,8 @@ publish_date: 2025-07-31
 title: DeepSeek-ing a Needle in a Haystack
 ---
 
+(Originally posted on the now defunct CentML blog.)
+
 # Introduction
 
 Imagine standing in front of a buffet with over 1200 dishes. Sounds amazing, right? Now imagine you only have room for ten bites, and half the dishes are just cleverly disguised sales pitches for kitchen gadgets. That’s the challenge we faced at CentML when trying to pick the [best sessions from NVIDIA’s GTC conference.](https://www.nvidia.com/gtc/session-catalog) With so many options, finding the talks that truly matter—ones aligned with our passion for efficient AI/ML systems engineering—felt like hunting for a needle in a haystack.
