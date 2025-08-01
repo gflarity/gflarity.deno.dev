@@ -3,7 +3,7 @@ publish_date: 2025-07-31
 title: DeepSeek-ing a Needle in a Haystack
 ---
 
-# Introduction\*\*
+# Introduction
 
 Imagine standing in front of a buffet with over 1200 dishes. Sounds amazing, right? Now imagine you only have room for ten bites, and half the dishes are just cleverly disguised sales pitches for kitchen gadgets. That’s the challenge we faced at CentML when trying to pick the [best sessions from NVIDIA’s GTC conference.](https://www.nvidia.com/gtc/session-catalog) With so many options, finding the talks that truly matter—ones aligned with our passion for efficient AI/ML systems engineering—felt like hunting for a needle in a haystack.
 
@@ -22,14 +22,14 @@ We turned to [DeepSeek R1](https://app.centml.com/create/rag), a reasoning model
 Here’s the system prompt that sets the stage:  
 python
 
-```py
+```python
 FILTER_SYSTEM_PROMPT = """You are an expert at evaluating AI/ML conference sessions, specifically focusing on identifying sessions that discuss optimizations of AI/ML systems themselves."""
 ```
 
 And here’s the user prompt that does the heavy lifting:  
 python
 
-````py
+````python
 FILTER_USER_PROMPT_TEMPLATE = """
 Analyze the following GTC session title and abstract. Determine if it meets MANY of the following criteria for inclusion:
 
@@ -78,7 +78,7 @@ Based on the criteria above, should this session be included? Provide a brief ju
 
 This setup worked like a charm—until we hit a snag. Some sessions, including a few in our top ten, were in Mandarin (that many of us don’t speak). Rather than overcomplicating the prompt to handle translations (and risk missing the nuance), we added a simple pre-filter to catch non-English text:
 
-```py
+```python
 def contains_non_english_characters(text: str) -> bool:
     """Checks if text contains non-English (non-ASCII) characters."""
     english_chars = string.ascii_letters + string.digits + string.punctuation + " "
@@ -101,7 +101,7 @@ COMPARE_SYSTEM_PROMPT = """You are an expert at comparing GTC conference session
 And the user prompt that drives the decision:  
 python
 
-````py
+````python
 COMPARE_USER_PROMPT_TEMPLATE = """
 You will analyze Titles & Abstracts of two GTC sessions (A and B) to determine which better emphasizes an academic discussions of techniques that lead to cost reduction and/or improved time/resource efficiency in AI/ML workflows, deployments, or applications. Prioritize abstacts that include evidence of concrete benefits over superficial buzz.
 
@@ -129,7 +129,7 @@ To keep things consistent, we used CentML’s JSON Schema feature. This forces t
 
 python
 
-```py
+```python
 async def compare_sessions(api_key: str, a: Session, b: Session, prompt: Prompt) -> int:
     """Compare two sessions to determine which is more relevant."""
     key_ab = f"{a.sessionID}_{b.sessionID}"
@@ -180,7 +180,7 @@ Instead of reinventing the wheel with custom retry logic, we tapped into [Tempor
 Here’s a peek at our workflow:  
 python
 
-```py
+```python
 @workflow.defn
 class TopTenGTCSessionsWorkflow:
     """Workflow for fetching, filtering, and ranking GTC sessions."""

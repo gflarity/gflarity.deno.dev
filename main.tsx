@@ -4,6 +4,7 @@ import blog, { ga, redirects, h } from "blog";
 import "https://esm.sh/prismjs@1.29.0/components/prism-typescript";
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash";
 import "https://esm.sh/prismjs@1.29.0/components/prism-go";
+import "https://esm.sh/prismjs@1.29.0/components/prism-python";
 
 blog({
   title: "Geoff's Blog",
