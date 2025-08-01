@@ -3,11 +3,7 @@ publish_date: 2025-07-31
 title: DeepSeek-ing a Needle in a Haystack
 ---
 
-**DeepSeek-ing a Needle in a Haystack:**
-
-Originally published now CentML's not defunct blog. 
-
-**Introduction**
+# Introduction\*\*
 
 Imagine standing in front of a buffet with over 1200 dishes. Sounds amazing, right? Now imagine you only have room for ten bites, and half the dishes are just cleverly disguised sales pitches for kitchen gadgets. That’s the challenge we faced at CentML when trying to pick the [best sessions from NVIDIA’s GTC conference.](https://www.nvidia.com/gtc/session-catalog) With so many options, finding the talks that truly matter—ones aligned with our passion for efficient AI/ML systems engineering—felt like hunting for a needle in a haystack.
 
@@ -15,9 +11,9 @@ Traditional search tools are like handing a waiter a napkin with “AI efficienc
 
 Luckily, we had a better idea: harness the reasoning power of DeepSeek R1 and [CentML’s serverless platform](https://centml.ai/platform/) to build an agentic workflow. This system filters out the noise and ranks the gems, all with minimal human grunt work. In this post, we’ll walk you through how we did it—step by step—so you can tweak it to find your own GTC favorites or adapt it to sift through any mountain of data. Let’s get started\!
 
-## Note, If you just want to check out our picks, [jump to the end](#bookmark=id.m08wpioe0lyb).
+**Note**, If you just want to check out our picks, [jump to the end](#bookmark=id.m08wpioe0lyb).
 
-**Filtering Sessions**
+# Filtering Sessions
 
 Before we could rank anything, we had to trim the fat. Comparing all 1200+ sessions would take forever, even with a slick serverless setup. So, we built a filter to ditch the irrelevant ones upfront, leaving us with a leaner list to work with.
 
@@ -91,7 +87,8 @@ def contains_non_english_characters(text: str) -> bool:
 
 With this combo, we slashed the session list down to a manageable size, keeping only the English-language talks that fit our efficiency-focused criteria. Efficiency in action\!
 
-**Comparing Sessions**  
+# Comparing Sessions\*\*
+
 Now that we had a filtered list, it was time to rank the survivors and find our top ten. Comparing sessions isn’t like picking your favorite pizza topping—there’s no “vibes only” option here. We needed a systematic way to pit two sessions against each other and decide a winner.
 
 Enter DeepSeek R1 again, this time with a comparison prompt. We set it up to evaluate pairs of sessions based on what matters to us at CentML: technical depth, cost/efficiency focus, and zero tolerance for salesy nonsense. Here’s the system prompt:  
@@ -174,7 +171,7 @@ cache = {}
 
 This code even includes a caching trick to avoid re-comparing the same pairs—because who has time for déjà vu? With this, we built a ranked list, one head-to-head showdown at a time.
 
-**Durable Workflows and Testing**
+# Durable Workflows and Testing
 
 Filtering and comparing are cool, but processing hundreds of sessions is a marathon, not a sprint. A single network glitch or bug could send us back to square one. And let’s be honest—nailing the prompts on the first try? That’s a pipe dream.
 
@@ -231,13 +228,13 @@ We processed sessions in batches of 25, which kept data limits in check and let 
 
 With this setup, we could easily tweak prompts on the fly with DeepSeek R1 via the [CentML Serverless Playground](https://app.centml.com/serverless/). Bug in the code? Fix it, resume, and keep rolling. It’s workflow management that doesn’t make you want to pull your hair out.
 
-**Conclusion**
+# Conclusion
 
 So, there you have it: a workflow that filters 1200+ GTC sessions, tosses the fluff, and ranks the best based on our love for efficient AI/ML systems. But here’s the kicker—it’s not just for us. Want sessions on AI ethics or GPU hacks instead? Tweak the prompts, and you’re golden.
 
 You can grab the full source code and a handy README [**here**](https://github.com/CentML/codex). All it takes to run it is Python, [Temporal](https://temporal.io/setup/install-temporal-cli), and a [CentML API key](https://app.centml.com/user/vault). Play around with it, make it yours, and happy session hunting\!
 
-**Appendix: CentML’s Top Picks for GTC Sessions**
+# Appendix: CentML’s Top Picks for GTC Sessions
 
 1\. [Accelerate Super Long-Context LLM Inference](https://www.nvidia.com/gtc/session-catalog/#/session/1727451588919001blpQ)  
 2\. [Exploit Inter-Layer Expert Affinity for Mixture-of-Experts Model Inference](https://www.nvidia.com/gtc/session-catalog/#/session/1729799015210001EnWU)  
