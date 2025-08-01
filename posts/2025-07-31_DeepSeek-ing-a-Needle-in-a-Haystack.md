@@ -234,7 +234,7 @@ With this setup, we could easily tweak prompts on the fly with DeepSeek R1 via t
 
 So, there you have it: a workflow that filters 1200+ GTC sessions, tosses the fluff, and ranks the best based on our love for efficient AI/ML systems. But here’s the kicker—it’s not just for us. Want sessions on AI ethics or GPU hacks instead? Tweak the prompts, and you’re golden.
 
-You can grab the full source code and a handy README [**here**](https://github.com/CentML/codex). All it takes to run it is Python, [Temporal](https://temporal.io/setup/install-temporal-cli), and a [CentML API key](https://app.centml.com/user/vault). Play around with it, make it yours, and happy session hunting\!
+You can grab the full source code and a handy README [**here**](https://github.com/gflarity/codex). All it takes to run it is Python, [Temporal](https://temporal.io/setup/install-temporal-cli), and a [CentML API key](https://app.centml.com/user/vault). Play around with it, make it yours, and happy session hunting\!
 
 # Appendix: CentML’s Top Picks for GTC Sessions
 
